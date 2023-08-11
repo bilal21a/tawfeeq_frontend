@@ -17157,3 +17157,21 @@ html[data-show=true] .settings-button {
 .line_height {
     line-height: 35px;
 }
+
+.margin {
+    margin-bottom: -1.75rem!important;
+}
+
+.hover:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.button_hover:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.hover:hover .btn:hover {
+    background-color: white;
+}
