@@ -17194,3 +17194,21 @@ html[data-show=true] .settings-button {
 .padding_bottom_0 {
     padding-bottom: 0px !important;
 }
+
+.color_green {
+    color: #1ED67A;
+}
+
+.color_green_button {
+    background-color: #1ED67A;
+}
+
+.color_green_button:hover {
+    background-color: limegreen;
+}
+
+.custom-row {
+    display: flex;
+    gap: 26px;
+    /* Adjust the value as needed */
+}
