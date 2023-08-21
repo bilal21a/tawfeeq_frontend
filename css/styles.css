@@ -7133,7 +7133,6 @@ button {
 .card {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03) !important;
     background: var(--foreground);
-    border-radius: var(--border-radius-lg);
     border: initial;
 }
 
@@ -17211,4 +17210,75 @@ html[data-show=true] .settings-button {
     display: flex;
     gap: 26px;
     /* Adjust the value as needed */
+}
+
+.switch-field {
+    display: flex;
+    margin-bottom: 36px;
+    overflow: hidden;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked+label {
+    background-color: var(--primary);
+    box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+    border-radius: var(--border-radius-lg);
+}
+
+.switch-field label:last-of-type {
+    border-radius: var(--border-radius-lg);
+}
+
+.switch-field label
+/* This is just for CodePen. */
+
+.form {
+    max-width: 600px;
+    font-weight: normal;
+    line-height: 1.625;
+    margin: 8px auto;
+    padding: 16px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.radius_top_right {
+    border-top-right-radius: 10px !important;
+}
+
+.radius_top_left {
+    border-top-left-radius: 10px !important;
+}
+
+.width_couple_pic {
+    width: 350px;
 }
