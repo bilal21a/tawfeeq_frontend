@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Acorn Admin Template | Form Layouts</title>
     <meta name="description" content="Examples and usage guidelines for form control styles and layout options." />
-    <meta name="description" content="Glidejs is a dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more." />
+    <meta name="description"
+        content="Glidejs is a dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more." />
     <!-- Favicon Tags Start -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
@@ -39,7 +41,8 @@
     <!-- Vendor Styles Start -->
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="css/vendor/OverlayScrollbars.min.css" />
-
+    <link rel="stylesheet" href="css/vendor/baguetteBox.min.css" />
+    <link rel="stylesheet" href="css/vendor/glide.core.min.css" />
     <link rel="stylesheet" href="css/vendor/select2.min.css" />
 
     <link rel="stylesheet" href="css/vendor/select2-bootstrap4.min.css" />
@@ -53,13 +56,13 @@
     <script src="js/base/loader.js"></script>
 
 
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/vendor/glide.core.min.css" />
     <style>
         input[type="radio"]:checked+label {
             color: white;
         }
-        
+
         .card_slider {
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03) !important;
             background: var(--foreground);
@@ -88,7 +91,8 @@
 
                 <!-- Language Switch Start -->
                 <div class="language-switch-container d-none">
-                    <button class="btn btn-empty language-button dropdown-toggle d-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</button>
+                    <button class="btn btn-empty language-button dropdown-toggle d-none" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">EN</button>
                     <div class="dropdown-menu d-none">
                         <a href="#" class="dropdown-item">DE</a>
                         <a href="#" class="dropdown-item active">EN</a>
@@ -99,7 +103,8 @@
 
                 <!-- User Menu Start -->
                 <div class="user-container d-flex d-none">
-                    <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <img class="profile" alt="profile" src="img/profile/profile-9.webp" />
                         <div class="name">Lisa Jackson</div>
                     </a>
@@ -214,35 +219,41 @@
                         </a>
                     </li>
                     <li class="list-inline-item d-none">
-                        <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true" aria-expanded="false" class="notification-button">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true"
+                            aria-expanded="false" class="notification-button">
                             <div class="position-relative d-inline-flex">
                                 <i data-acorn-icon="bell" data-acorn-size="18"></i>
                                 <span class="position-absolute notification-dot rounded-xl"></span>
                             </div>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out" id="notifications">
+                        <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out"
+                            id="notifications">
                             <div class="scroll">
                                 <ul class="list-unstyled border-last-none">
                                     <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="img/profile/profile-1.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <img src="img/profile/profile-1.webp"
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">Joisse Kaycee just sent a new comment!</a>
                                         </div>
                                     </li>
                                     <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="img/profile/profile-2.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <img src="img/profile/profile-2.webp"
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">New order received! It is total $147,20.</a>
                                         </div>
                                     </li>
                                     <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="img/profile/profile-3.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <img src="img/profile/profile-3.webp"
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">3 items just added to wish list by a user!</a>
                                         </div>
                                     </li>
                                     <li class="pb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="img/profile/profile-6.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <img src="img/profile/profile-6.webp"
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">Kirby Peters just sent a new message!</a>
                                         </div>
@@ -280,7 +291,7 @@
                         </li>
                         <li class="mega">
                             <a href="login_page.html">
-                                <span class="label">تسجيل الدخول                                </span>
+                                <span class="label">تسجيل الدخول </span>
                             </a>
                         </li>
                         <li class="mega">
@@ -325,10 +336,12 @@
 
                                     <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12 pb-3 p-sm-0">
                                         <div class="switch-field mb-0">
-                                            <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-                                            <label class="rounded-0 radius_top_right p-3 fw-bold" for="radio-one" style="width: 50%;">ابحث عن زوج</label>
+                                            <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
+                                            <label class="rounded-0 radius_top_right p-3 fw-bold" for="radio-one"
+                                                style="width: 50%;">ابحث عن زوج</label>
                                             <input type="radio" id="radio-two" name="switch-one" value="no" />
-                                            <label class="rounded-0 radius_top_left p-3 fw-bold" for="radio-two" style="width: 50%;">ابحث عن زوجة</label>
+                                            <label class="rounded-0 radius_top_left p-3 fw-bold" for="radio-two"
+                                                style="width: 50%;">ابحث عن زوجة</label>
                                         </div>
                                         <div class="card">
                                             <div class="card-body pt-3 pb-7">
@@ -337,37 +350,51 @@
                                                     <h4 class="fw-semibold mb-0">اعثر على شريك حياتك </h4><br>
                                                     <form action="">
                                                         <h5 class="fw-semibold mb-1">الاسم</h5>
-                                                        <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الاسم">
+                                                        <input type="text" name="topic" id="topic"
+                                                            class="form-control input_background" placeholder="الاسم">
                                                         <div class="row mt-3">
                                                             <div class="col-6 ps-0">
                                                                 <h5 class="fw-semibold mb-1">الجنسية</h5>
-                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الجنسية">
+                                                                <input type="text" name="topic" id="topic"
+                                                                    class="form-control input_background"
+                                                                    placeholder="الجنسية">
                                                             </div>
                                                             <div class="col-6">
                                                                 <h5 class="fw-semibold mb-1">مكان الاقامة</h5>
-                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="مكان الاقامة">
+                                                                <input type="text" name="topic" id="topic"
+                                                                    class="form-control input_background"
+                                                                    placeholder="مكان الاقامة">
                                                             </div>
                                                         </div>
                                                         <div class="row mt-3">
                                                             <div class="col-4 ps-0">
                                                                 <h5 class="fw-semibold mb-1">العمر من </h5>
-                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="العمر من">
+                                                                <input type="text" name="topic" id="topic"
+                                                                    class="form-control input_background"
+                                                                    placeholder="العمر من">
                                                             </div>
                                                             <div class="col-4 ps-0">
                                                                 <h5 class="fw-semibold mb-1">العمر الى</h5>
-                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="العمر الى">
+                                                                <input type="text" name="topic" id="topic"
+                                                                    class="form-control input_background"
+                                                                    placeholder="العمر الى">
                                                             </div>
                                                             <div class="col-4">
                                                                 <h5 class="fw-semibold mb-1"> الحالة الاجتماعية</h5>
-                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الحالة الاجتماعية">
+                                                                <input type="text" name="topic" id="topic"
+                                                                    class="form-control input_background"
+                                                                    placeholder="الحالة الاجتماعية">
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-3">
-                                                                <button class="btn btn-xl btn-primary mt-3" type="button">تسجيل</button>
+                                                                <button class="btn btn-xl btn-primary mt-3"
+                                                                    type="button">تسجيل</button>
                                                             </div>
                                                             <div class="col-6">
-                                                                <button class="btn btn-xl btn-white btn-outline-primary mt-3" type="button">تسجيل</button>
+                                                                <button
+                                                                    class="btn btn-xl btn-white btn-outline-primary mt-3"
+                                                                    type="button">تسجيل</button>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -379,7 +406,8 @@
                                     </div>
                                     <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 p-sm-0">
                                         <div class="">
-                                            <img class="width_couple_pic" width="400px" src="find_partner.png" alt="" srcset="">
+                                            <img class="width_couple_pic" width="400px" src="find_partner.png" alt=""
+                                                srcset="">
                                         </div>
                                     </div>
                                 </div>
@@ -390,100 +418,97 @@
                 </div>
                 <!-- Layout Footer End -->
             </div>
-            <div id="root">
-                <main>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div>
-                                    <!-- Center Start -->
-                                    <section class="scroll-section" id="center">
-                                        <h2 class="small-title">Center</h2>
-                                        <div class="row">
-                                            <div class="col-12 mb-5">
-                                                <div class="glide" id="glideCenter">
-                                                    <div class="glide__track" data-glide-el="track">
-                                                        <div class="glide__slides">
-                                                            <div class="glide__slide">
-                                                                <div class="card mb-5">
-                                                                    <img src="img/product/small/pullman-loaf.jpg" class="card-img-top" alt="card image" />
-                                                                    <div class="card-body">
-                                                                        <h5 class="card-title">Card title 1</h5>
-                                                                        <p class="card-text">Liquorice caramels apple pie chupa.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="glide__slide">
-                                                                <div class="card mb-5">
-                                                                    <img src="img/product/small/pullman-loaf.jpg" class="card-img-top" alt="card image" />
-                                                                    <div class="card-body">
-                                                                        <h5 class="card-title">Card title 2</h5>
-                                                                        <p class="card-text">Liquorice caramels apple pie chupa.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="glide__slide">
-                                                                <div class="card mb-5">
-                                                                    <img src="img/product/small/pullman-loaf.jpg" class="card-img-top" alt="card image" />
-                                                                    <div class="card-body">
-                                                                        <h5 class="card-title">Card title 3</h5>
-                                                                        <p class="card-text">Liquorice caramels apple pie chupa.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="glide__slide">
-                                                                <div class="card mb-5">
-                                                                    <img src="img/product/small/pullman-loaf.jpg" class="card-img-top" alt="card image" />
-                                                                    <div class="card-body">
-                                                                        <h5 class="card-title">Card title 4</h5>
-                                                                        <p class="card-text">Liquorice caramels apple pie chupa.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="glide__slide">
-                                                                <div class="card mb-5">
-                                                                    <img src="img/product/small/pullman-loaf.jpg" class="card-img-top" alt="card image" />
-                                                                    <div class="card-body">
-                                                                        <h5 class="card-title">Card title 5</h5>
-                                                                        <p class="card-text">Liquorice caramels apple pie chupa.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="glide__slide">
-                                                                <div class="card mb-5">
-                                                                    <img src="img/product/small/pullman-loaf.jpg" class="card-img-top" alt="card image" />
-                                                                    <div class="card-body">
-                                                                        <h5 class="card-title">Card title 6</h5>
-                                                                        <p class="card-text">Liquorice caramels apple pie chupa.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="text-center">
-                                                        <span class="glide__arrows slider-nav" data-glide-el="controls">
-                                    <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir="<">
-                                      <i data-cs-icon="chevron-left"></i>
-                                    </button>
-                                  </span>
-                                                        <span class="glide__bullets" data-glide-el="controls[nav]"></span>
-                                                        <span class="glide__arrows slider-nav" data-glide-el="controls">
-                                    <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir=">">
-                                      <i data-cs-icon="chevron-right"></i>
-                                    </button>
-                                  </span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <!-- Basic Start -->
+                        <section class="scroll-section" id="basic">
+                            <h2 class="small-title">Basic</h2>
+                            <div class="row">
+                              <div class="col-12 p-0 mb-5">
+                                <div class="glide" id="glideBasic">
+                                  <div class="glide__track" data-glide-el="track">
+                                    <div class="glide__slides">
+                                      <div class="glide__slide">
+                                        <div class="card mb-5">
+                                          <img src="img/product/small/product-3.webp" class="card-img-top" alt="card image" />
+                                          <div class="card-body">
+                                            <h5 class="card-title">Card title 1</h5>
+                                            <p class="card-text">Liquorice caramels apple pie chupa.</p>
+                                          </div>
                                         </div>
-                                    </section>
+                                      </div>
+                                      <div class="glide__slide">
+                                        <div class="card mb-5">
+                                          <img src="img/product/small/product-3.webp" class="card-img-top" alt="card image" />
+                                          <div class="card-body">
+                                            <h5 class="card-title">Card title 2</h5>
+                                            <p class="card-text">Liquorice caramels apple pie chupa.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="glide__slide">
+                                        <div class="card mb-5">
+                                          <img src="img/product/small/product-3.webp" class="card-img-top" alt="card image" />
+                                          <div class="card-body">
+                                            <h5 class="card-title">Card title 3</h5>
+                                            <p class="card-text">Liquorice caramels apple pie chupa.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="glide__slide">
+                                        <div class="card mb-5">
+                                          <img src="img/product/small/product-3.webp" class="card-img-top" alt="card image" />
+                                          <div class="card-body">
+                                            <h5 class="card-title">Card title 4</h5>
+                                            <p class="card-text">Liquorice caramels apple pie chupa.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="glide__slide">
+                                        <div class="card mb-5">
+                                          <img src="img/product/small/product-3.webp" class="card-img-top" alt="card image" />
+                                          <div class="card-body">
+                                            <h5 class="card-title">Card title 5</h5>
+                                            <p class="card-text">Liquorice caramels apple pie chupa.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="glide__slide">
+                                        <div class="card mb-5">
+                                          <img src="img/product/small/product-3.webp" class="card-img-top" alt="card image" />
+                                          <div class="card-body">
+                                            <h5 class="card-title">Card title 6</h5>
+                                            <p class="card-text">Liquorice caramels apple pie chupa.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="glide__slide">
+                                        <div class="card mb-5">
+                                          <img src="img/product/small/product-3.webp" class="card-img-top" alt="card image" />
+                                          <div class="card-body">
+                                            <h5 class="card-title">Card title 7</h5>
+                                            <p class="card-text">Liquorice caramels apple pie chupa.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="text-center">
+                                    <span class="glide__arrows slider-nav" data-glide-el="controls">
+                                      <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir="<">
+                                        <i data-acorn-icon="chevron-left"></i>
+                                      </button>
+                                    </span>
+                                    <span class="glide__bullets" data-glide-el="controls[nav]"></span>
+                                    <span class="glide__arrows slider-nav" data-glide-el="controls">
+                                      <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir=">">
+                                        <i data-acorn-icon="chevron-right"></i>
+                                      </button>
+                                    </span>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
+                          </section>
+                          <!-- Basic End -->
         </main>
 
         <!-- Search Modal End -->
