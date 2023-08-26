@@ -82,6 +82,52 @@
             width: 270px !important;
             margin-right: 0px;
         }
+        
+        .section_align {
+            margin-left: auto;
+            width: 70%;
+            margin-right: auto;
+        }
+        
+        .arrow-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            /* Adjust the left position as needed */
+            z-index: 1;
+            /* Ensure the buttons appear in front of the slides */
+        }
+        
+        .left_arrow {
+            position: absolute;
+            transform: translateY(-50%);
+            left: -45px;
+            z-index: 1;
+        }
+        
+        .right_arrow {
+            position: absolute;
+            transform: translateY(-50%);
+            left: 1269px;
+            z-index: 1;
+        }
+        
+        .backgound_1 {
+            background-image: url('tawfeeq_background_1.png');
+            background-repeat: no-repeat;
+        }
+        
+        .backgound_2 {
+            background-image: url('tawfeeq_background_2.png');
+            background-repeat: no-repeat;
+        }
+        
+        .background_color {
+            background-color: #F9F9F9;
+            box-shadow: 0px 0px 0px !important;
+            direction: rtl;
+        }
     </style>
 
 </head>
@@ -405,11 +451,22 @@
                 <!-- Layout Footer End -->
             </div>
             <!-- Basic Start -->
-            <section class="scroll-section" dir="ltr" id="basic">
-                <h2 class="" dir="rtl">الأعضاء الجدد</h2>
-
+            <section class="scroll-section section_align" dir="ltr" id="basic">
+                <h2 class="" dir="rtl"><span class="fw-bold fs-4">الأعضاء الجدد</span>(عرض الكل)</h2>
                 <div class="col-12 mb-5">
                     <div class="glide" id="glideCenter">
+                        <div class="arrow-container">
+                            <span class="glide__arrows slider-nav" data-glide-el="controls">
+                                <button class="btn btn-icon btn-icon-only btn-outline-primary left_arrow" data-glide-dir="<">
+                                    <i data-acorn-icon="chevron-left"></i>
+                                </button>
+                            </span>
+                            <span class="glide__arrows slider-nav" data-glide-el="controls">
+                                <button class="btn btn-icon btn-icon-only btn-outline-primary right_arrow" data-glide-dir=">">
+                                    <i data-acorn-icon="chevron-right"></i>
+                                </button>
+                            </span>
+                        </div>
                         <div class="glide__track" data-glide-el="track">
                             <div class="glide__slides">
                                 <div class="glide__slide width_silder">
@@ -542,33 +599,92 @@
                                 </div>
 
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="" dir="rtl"><span class="fw-bold fs-4">الأعضاء المتواجدون حاليًا</span>(عرض الكل)</h2>
+                <div class="row justify-content-center ">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 width_silder">
+                        <div class="card mb-5" dir="rtl">
+                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                            <div class="card-body">
+                                <h5 class="card-title">نبض الأمل </h5>
+                                <div class="star-row">
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                </div>
+                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 width_silder">
+                        <div class="card mb-5" dir="rtl">
+                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                            <div class="card-body">
+                                <h5 class="card-title">نبض الأمل </h5>
+                                <div class="star-row">
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                </div>
+                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 width_silder ">
+                        <div class="card mb-5" dir="rtl">
+                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                            <div class="card-body">
+                                <h5 class="card-title">بومحمد _44</h5>
+                                <div class="star-row">
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                </div>
+                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="" dir="rtl"><span class="fw-bold fs-4">خدماتنا</span>(عرض الكل)</h2>
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card h-100 hover-scale-up backgound_1 background_color pe-3">
+                            <div class="card-body pb-0">
+                                <div class="d-flex flex-column">
+                                    <div class="display-4"> خدمات تجهيز الأفراح </div>
+                                </div>
+                                <div class="d-flex flex-column">
 
-                            <!-- <div class="text-center">
-                                <span class="glide__arrows slider-nav" data-glide-el="controls">
-                                <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir="<">
-                                  <i data-cs-icon="chevron-left"></i>
-                                </button>
-                              </span>
-                                <span class="glide__bullets" data-glide-el="controls[nav]"></span>
-                                <span class="glide__arrows slider-nav" data-glide-el="controls">
-                                <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir=">">
-                                  <i data-cs-icon="chevron-right"></i>
-                                </button>
-                              </span>
-                            </div> -->
-
-                            <div class="text-center">
-                                <span class="glide__arrows slider-nav" data-glide-el="controls">
-                                      <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir="<">
-                                        <i data-acorn-icon="chevron-left"></i>
-                                      </button>
-                                    </span>
-                                <span class="glide__bullets" data-glide-el="controls[nav]"></span>
-                                <span class="glide__arrows slider-nav" data-glide-el="controls">
-                                      <button class="btn btn-icon btn-icon-only btn-outline-primary" data-glide-dir=">">
-                                        <i data-acorn-icon="chevron-right"></i>
-                                      </button>
-                                    </span>
+                                    <div class="d-flex flex-column">
+                                        <p class="line_height fw-light">المحامي الاقرب لك للحصول على استشارة المستشار القانوني المختص في الاحوال الشخصية في حدوث اي خلاف بعقد النجاح او مشاكل زوجية او مشاكل عائلية لمعرفة ما لك وما عليك في قانون دولتك. إخلاء مسؤولية: ( أي معاملة مع مزودي
+                                            الخدمات على مسؤوليتك الخاصة )
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="card h-100 hover-scale-up backgound_2 background_color pe-3">
+                            <div class="card-body pb-0">
+                                <div class="d-flex flex-column">
+                                    <div class="display-4"> خدمة مراكز الفحص الطبي </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column">
+                                        <p class="line_height fw-light">المحامي الاقرب لك للحصول على استشارة المستشار القانوني المختص في الاحوال الشخصية في حدوث اي خلاف بعقد النجاح او مشاكل زوجية او مشاكل عائلية لمعرفة ما لك وما عليك في قانون دولتك. إخلاء مسؤولية: ( أي معاملة مع مزودي
+                                            الخدمات على مسؤوليتك الخاصة )
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
