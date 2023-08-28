@@ -63,12 +63,10 @@
         
         .golden-star {
             color: gold;
-            /* This sets the color to golden */
         }
         
         .star-row {
             display: inline-flex;
-            /* Display the stars in a row */
         }
         
         .letter_spacing {
@@ -122,8 +120,6 @@
         
         .file-input {
             position: absolute;
-            width: 550px;
-            height: 206px;
             opacity: 0;
             cursor: pointer;
         }
@@ -133,10 +129,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 550px;
-            height: 206px;
             border: 2px dashed #ccc;
-            background-color: #f9f9f9;
+            background-color: #D4D4D4;
             text-align: center;
             transition: border 0.3s ease-in-out;
         }
@@ -155,9 +149,33 @@
             border-color: #007bff;
         }
         
-        .height_input_img {
-            width: 550px;
-            height: 170px;
+        .width_100 {
+            width: 100%;
+        }
+        
+        .container {
+            width: 100%;
+            color: rgb(78, 78, 78);
+            padding: 0px 20px;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td,
+        th {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        .text_align {
+            text-align: center;
         }
     </style>
 </head>
@@ -413,7 +431,7 @@
         </div>
         <main>
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-12">
                     <div class="card mb-5">
                         <div class="card mb-3">
                             <div class="card-header border-0 pb-0">
@@ -427,13 +445,13 @@
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#third" role="tab" type="button" aria-selected="false">تأكيد الهوية</button>
                                     </li>
-                                    <li class="nav-item disabled" role="presentation">
-                                        <button class="nav-link" disabled data-bs-toggle="tab" data-bs-target="#fourth" role="tab" type="button" aria-selected="false">
-                                            Disabled
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fourth" role="tab" type="button" aria-selected="false">
+                                            إشتراكاتي    
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fifth" role="tab" type="button" aria-selected="false">Fifth</button>
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fifth" role="tab" type="button" aria-selected="false">من زار ملفي</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sixth" role="tab" type="button" aria-selected="false">Sixth</button>
@@ -589,43 +607,70 @@
                                             </div>
                                         </div>
                                         <div class="row justify-content-between">
-                                            <div class="col-md-5">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <h4 class="fw-light letter_spacing pe-4">
-                                                            تأكيد الهوية الشخصية
-                                                        </h4>
-                                                        <h4 class="fw-light letter_spacing pe-4"> الاسم كاملاً حسب الهوية الشخصية
-                                                        </h4>
-                                                        <form action="">
-                                                            <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الاسم كاملاً حسب الهوية الشخصية...">
-                                                        </form>
-                                                    </div>
-                                                </div>
+                                            <div class="col-md-5 col-sm-12">
+                                                <!-- <div class="row">
+                                                    <div class="col-md-12"> -->
+                                                <h4 class="fw-bold letter_spacing pe-4">
+                                                    تأكيد الهوية الشخصية
+                                                </h4>
+                                                <h4 class="fw-light letter_spacing pe-4"> الاسم كاملاً حسب الهوية الشخصية
+                                                </h4>
+                                                <form action="">
+                                                    <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الاسم كاملاً حسب الهوية الشخصية...">
+                                                </form>
+                                                <!-- </div>
+                                                </div> -->
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="pt-5">
                                                     <!-- <input type="file" name="image" class="form-control" value=""> -->
-                                                    <label class="file-input-container ">
+                                                    <label class="width_100 ">
                                                         <input class="file-input" accept="image/jpeg, image/png" multiple type="file">
-                                                        <div class="file-input-label">
-                                                            <img class="height_input_img" src="image.png" alt="image placeholder">
+                                                        <div class="file-input-label w-md-75 w-sm-100">
+                                                            <img class="height_input_img w-100 h-100" src="image.png" alt="image placeholder">
                                                             <p>اسحب الملف هنا</p>
                                                         </div>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="btn btn-primary fs-5 width_btn mt-md-4" type="button"><i data-acorn-icon="pen" class="me-2 ms-3" data-acorn-size="17"></i>تعديل</button>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <button class="btn btn-primary fs-5 width_btn mt-4" type="button">
+                                            حفظ
+                                        </button>
                                     </div>
                                     <div class="tab-pane fade" id="fourth" role="tabpanel">
-                                        <h5 class="card-title">Fourth Title</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <table class="">
+                                            <tr>
+                                                <th>الحالة </th>
+                                                <th>طريقة الدفع </th>
+                                                <th>نوع الإشتراك </th>
+                                                <th>الرقم</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td colspan="2" class="text_align">لست مشترك بأي باقة
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td colspan="2" class="text_align">+ الإشتراك بباقة جديدة</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
                                     </div>
                                     <div class="tab-pane fade" id="fifth" role="tabpanel">
-                                        <h5 class="card-title">Fifth Title</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <h5 class="card-title text_align line_height fw-bold">إجمالي عدد زيارات ملفك25</h5>
+                                        <div class="text_align">
+                                            <button class="btn btn-primary fs-5 mt-4 " type="button">
+                                                حفظ
+                                            </button><button class="btn btn-primary fs-5 mt-4 me-3" type="button">
+                                                حفظ
+                                            </button>
+                                        </div>
                                     </div>
                                     <div class="tab-pane fade" id="sixth" role="tabpanel">
                                         <h5 class="card-title">Sixth Title</h5>
