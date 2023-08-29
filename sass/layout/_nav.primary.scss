@@ -17,7 +17,7 @@ html[data-placement='vertical'] {
     background-size: cover;
     width: var(--nav-size);
     background-position: center;
-    background-image: linear-gradient(160deg, var(--gradient-1), var(--gradient-1), var(--gradient-2), var(--gradient-3));
+    background-image: linear-gradient(to right, #129DD5, #9377BD, #FA5AAB) !important;
 
     .nav-shadow {
       width: 100%;
