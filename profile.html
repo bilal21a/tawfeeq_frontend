@@ -177,6 +177,38 @@
         .text_align {
             text-align: center;
         }
+        
+        .conversations__chats {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .list_style {
+            background-color: #F9F9F9;
+            border-radius: 5px;
+            padding: 3px;
+        }
+        
+        .three_dots {
+            margin-top: 5px;
+            align-self: baseline;
+            justify-content: center;
+            display: flex;
+        }
+        
+        .img_radius {
+            border-radius: 50%;
+        }
+        
+        .backgound_color {
+            width: fit-content;
+            background-color: #F5EDBD;
+        }
+        
+        .textcenter {
+            margin: auto;
+            align-self: center;
+        }
     </style>
 </head>
 
@@ -410,9 +442,7 @@
                 <!-- Mobile Buttons Start -->
                 <div class="mobile-buttons-container">
                     <!-- Scrollspy Mobile Button Start -->
-                    <a href="#" id="scrollSpyButton" class="spy-button" data-bs-toggle="dropdown">
-                        <i data-acorn-icon="menu-dropdown"></i>
-                    </a>
+
                     <!-- Scrollspy Mobile Button End -->
 
                     <!-- Scrollspy Mobile Dropdown Start -->
@@ -440,7 +470,7 @@
                                         <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#first" role="tab" type="button" aria-selected="true">الملف الشخصي</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#second" role="tab" type="button" aria-selected="false">Second</button>
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#second" role="tab" type="button" aria-selected="false">الرسائل</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#third" role="tab" type="button" aria-selected="false">تأكيد الهوية</button>
@@ -453,9 +483,9 @@
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fifth" role="tab" type="button" aria-selected="false">من زار ملفي</button>
                                     </li>
-                                    <li class="nav-item" role="presentation">
+                                    <!-- <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sixth" role="tab" type="button" aria-selected="false">Sixth</button>
-                                    </li>
+                                    </li> -->
                                     <!-- An empty list to put overflowed links -->
                                     <li class="nav-item dropdown ms-auto pe-0 d-none responsive-tab-dropdown">
                                         <button class="btn btn-icon btn-icon-only btn-foreground mt-2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -597,8 +627,141 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="second" role="tabpanel">
-                                        <h5 class="card-title">Second Title</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-12">
+                                                <div class="scroll-out mb-2" style="height: 350px; overflow-x: hidden;">
+                                                    <div class="list list_style">
+                                                        <div class="row g-2 mb-2">
+                                                            <div class="col-2">
+                                                                <div>
+                                                                    <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
+                                                                </div>
+                                                                <!-- User profile image -->
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <p class="fw-bold">
+                                                                    الزين
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-2 three_dots">
+                                                                <i class="mt-1" data-acorn-icon="more-vertical" class="me-2" data-acorn-size="17"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Repeat this structure for other user profiles -->
+                                                    </div>
+                                                    <hr style="margin: 0%;">
+
+                                                    <div class="list list_style">
+                                                        <div class="row g-2 mb-2">
+                                                            <div class="col-2">
+                                                                <!-- User profile image -->
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <p class="fw-bold">
+                                                                    عميقة
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-2 three_dots">
+                                                                <i class="mt-1" data-acorn-icon="more-vertical" class="me-2" data-acorn-size="17"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Repeat this structure for other user profiles -->
+                                                    </div>
+                                                    <hr style="margin: 0%;">
+
+                                                    <div class="list list_style">
+                                                        <div class="row g-2 mb-2">
+                                                            <div class="col-2">
+                                                                <!-- User profile image -->
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <p class="fw-bold">
+                                                                    بنت الدار
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-2 three_dots">
+                                                                <i class="mt-1" data-acorn-icon="more-vertical" class="me-2" data-acorn-size="17"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Repeat this structure for other user profiles -->
+                                                    </div>
+                                                    <hr style="margin: 0%;">
+
+                                                    <div class="list list_style">
+                                                        <div class="row g-2 mb-2">
+                                                            <div class="col-2">
+                                                                <!-- User profile image -->
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <p class="fw-bold">
+                                                                    غالية
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-2 three_dots">
+                                                                <i class="mt-1" data-acorn-icon="more-vertical" class="me-2" data-acorn-size="17"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Repeat this structure for other user profiles -->
+                                                    </div>
+                                                    <hr style="margin: 0%;">
+
+                                                    <div class="list list_style">
+                                                        <div class="row g-2 mb-2">
+                                                            <div class="col-2">
+                                                                <!-- User profile image -->
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <p class="fw-bold">
+                                                                    أم محمد
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-2 three_dots">
+                                                                <i class="mt-1" data-acorn-icon="more-vertical" class="me-2" data-acorn-size="17"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Repeat this structure for other user profiles -->
+                                                    </div>
+                                                    <hr style="margin: 0%;">
+
+                                                    <div class="list list_style">
+                                                        <div class="row g-2 mb-2">
+                                                            <div class="col-2">
+                                                                <!-- User profile image -->
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <p class="fw-bold">
+                                                                    الشيخه
+
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-2 three_dots">
+                                                                <i class="mt-1" data-acorn-icon="more-vertical" class="me-2" data-acorn-size="17"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Repeat this structure for other user profiles -->
+                                                    </div>
+                                                    <hr style="margin: 0%;">
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 d-flex">
+                                                <div class="backgound_color textcenter">المعذره لايمكنك مراسلة هذا العضو!!
+                                                    <br><a class="text-dark" href="/pricing" class="text-decoration-none"><strong>انقر هنا للاشتراك في الخدمه</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- <h5 class="card-title">Second Title</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                                     </div>
                                     <div class="tab-pane fade" id="third" role="tabpanel">
                                         <div class="d-grid gap-2 d-md-flex justify-content-between">
@@ -672,10 +835,10 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="sixth" role="tabpanel">
+                                    <!-- <div class="tab-pane fade" id="sixth" role="tabpanel">
                                         <h5 class="card-title">Sixth Title</h5>
                                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
