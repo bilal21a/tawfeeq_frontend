@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Acorn Admin Template | Form Layouts</title>
     <meta name="description" content="Examples and usage guidelines for form control styles and layout options." />
-    <meta name="description"
-        content="Glidejs is a dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more." />
+    <meta name="description" content="Glidejs is a dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more." />
     <!-- Favicon Tags Start -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
@@ -59,73 +57,81 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
     <style>
+        .font_family {
+            font-family: Tajawal!important;
+        }
+        
         .no-bullets {
             list-style: none;
         }
-
+        
         .golden-star {
             color: gold;
         }
-
+        
+        .white {
+            color: whitesmoke;
+        }
+        
         .star-row {
             display: inline-flex;
         }
-
+        
         .letter_spacing {
             letter-spacing: -1px;
         }
-
+        
         .width_btn {
             width: 209px;
             height: 35px;
         }
-
+        
         .user-info {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-
+        
         .user-info-item sepcifyed_width {
             display: flex;
             align-items: center;
         }
-
+        
         .user-info-label {
             font-weight: bold;
             margin-right: 5px;
         }
-
+        
         .user-info-value {
             border: 0px solid #ccc;
             padding: 5px;
             padding-right: 10px;
         }
-
+        
         .sepcifyed_width {
             width: 250px;
         }
-
+        
         .sepcifyed_width1 {
             width: 436px;
         }
-
+        
         .margin_top {
             margin-top: 14px !important;
         }
-
+        
         .file-input-container {
             position: relative;
             display: inline-block;
             cursor: pointer;
         }
-
+        
         .file-input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
         }
-
+        
         .file-input-label {
             display: flex;
             flex-direction: column;
@@ -136,85 +142,122 @@
             text-align: center;
             transition: border 0.3s ease-in-out;
         }
-
+        
         .file-input-label img {
             width: 80px;
             height: 80px;
         }
-
+        
         .file-input-label p {
             font-size: 16px;
             margin: 10px 0;
         }
-
+        
         .file-input-label:hover {
             border-color: #007bff;
         }
-
+        
         .width_100 {
             width: 100%;
         }
-
+        
         .container {
             width: 100%;
             color: rgb(78, 78, 78);
             padding: 0px 20px;
             text-align: center;
         }
-
+        
         table {
             width: 100%;
         }
-
+        
         td,
         th {
             text-align: left;
             padding: 8px;
         }
-
+        
         tr:nth-child(even) {
             background-color: #dddddd;
         }
-
+        
         .text_align {
             text-align: center;
         }
-
+        
         .conversations__chats {
             display: flex;
             flex-direction: column;
         }
-
-        .list_style {
+        /* .list_style {
             background-color: #F9F9F9;
             border-radius: 5px;
             padding: 3px;
-        }
-
+        } */
+        
         .three_dots {
             margin-top: 5px;
             align-self: baseline;
             justify-content: center;
             display: flex;
         }
-
+        
         .img_radius {
             border-radius: 50%;
         }
-
+        
         .backgound_color {
             width: fit-content;
             background-color: #F5EDBD;
         }
-
+        
         .textcenter {
             margin: auto;
             align-self: center;
         }
+        
+        .padding_bottom {
+            padding-bottom: 0px !important;
+        }
+        
+        .footer {
+            /* height: 380px; */
+            background-color: #00A3D8;
+        }
+        
+        .text_decoration {
+            text-decoration: none;
+        }
+        
+        .line_height_footer {
+            line-height: 2;
+        }
+        
+        .font_size {
+            font-size: 14px;
+        }
+        
+        .blue_background {
+            background-color: #00A3D8;
+            color: whitesmoke;
+        }
+        
+         ::placeholder {
+            color: whitesmoke;
+            /* Change the color to your desired color */
+        }
+        
+        .blue_background:focus {
+            border: 1px solid whitesmoke;
+            background-color: #00A3D8;
+            outline: none;
+            color: whitesmoke;
+        }
     </style>
 </head>
 
-<body class="letter-spacing">
+<body class="letter-spacing padding_bottom font_family">
     <div id="root">
         <div id="nav" class="nav-container d-flex">
             <div class="nav-content d-flex">
@@ -232,8 +275,7 @@
 
                 <!-- Language Switch Start -->
                 <div class="language-switch-container d-none">
-                    <button class="btn btn-empty language-button dropdown-toggle d-none" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">EN</button>
+                    <button class="btn btn-empty language-button dropdown-toggle d-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</button>
                     <div class="dropdown-menu d-none">
                         <a href="#" class="dropdown-item">DE</a>
                         <a href="#" class="dropdown-item active">EN</a>
@@ -243,11 +285,32 @@
                 <!-- Language Switch End -->
 
                 <!-- User Menu Start -->
-                <div class="user-container d-flex d-none">
-                    <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <img class="profile" alt="profile" src="img/profile/profile-9.webp" />
-                        <div class="name">Lisa Jackson</div>
+                <div class="user-container d-flex ms-md-7 ms-0">
+                    <a href="#" class="d-flex user position-relative ps-md-7 ps-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="profile" alt="profile" src="homepage_img/man.png" />
+                        <ul class="text-decoration-none d-md-flex ps-0 pe-1 flex-column" style="list-style-type: none;">
+                            <li>
+                            </li>
+                            <li class="ps-3 mb-2">
+                                <div class="name fs-6">خالد.</div>
+                            </li>
+                            <div class="d-flex flex-md-row-reverse me-3">
+                                <li class="ps-3">
+                                    <i class="white" data-acorn-icon="star" data-acorn-size="15"></i>
+                                </li>
+                                <li class="ps-3">
+                                    <i class="white" data-acorn-icon="bell" data-acorn-size="15"></i>
+                                </li>
+                                <li class="ps-3">
+                                    <i class="white" data-acorn-icon="message" data-acorn-size="15"></i>
+                                </li>
+                                <li class="ps-3">
+                                    <i class="white" data-acorn-icon="logout" data-acorn-size="15"></i>
+                                </li>
+                            </div>
+
+                        </ul>
+
                     </a>
                     <div class="dropdown-menu dropdown-menu-end user-menu wide">
                         <div class="row mb-3 ms-0 me-0">
@@ -347,62 +410,15 @@
                 <!-- Icons Menu Start -->
                 <ul class="list-unstyled list-inline text-center menu-icons">
 
-                    <li class="list-inline-item d-none">
-                        <a href="#" id="pinButton" class="pin-button">
-                            <i data-acorn-icon="lock-on" class="unpin" data-acorn-size="18"></i>
-                            <i data-acorn-icon="lock-off" class="pin" data-acorn-size="18"></i>
-                        </a>
-                    </li>
+
                     <li class="list-inline-item">
                         <a href="#" id="colorButton">
+                            <span class="fs-6" style="padding-left: 15px;">   الوضع النهاري</span>
                             <i data-acorn-icon="moon" class="light" data-acorn-size="18"></i>
                             <i data-acorn-icon="sun" class="dark" data-acorn-size="18"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item d-none">
-                        <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true"
-                            aria-expanded="false" class="notification-button">
-                            <div class="position-relative d-inline-flex">
-                                <i data-acorn-icon="bell" data-acorn-size="18"></i>
-                                <span class="position-absolute notification-dot rounded-xl"></span>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out"
-                            id="notifications">
-                            <div class="scroll">
-                                <ul class="list-unstyled border-last-none">
-                                    <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="img/profile/profile-1.webp"
-                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                        <div class="align-self-center">
-                                            <a href="#">Joisse Kaycee just sent a new comment!</a>
-                                        </div>
-                                    </li>
-                                    <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="homepage_img/man.png"
-                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                        <div class="align-self-center">
-                                            <a href="#">New order received! It is total $147,20.</a>
-                                        </div>
-                                    </li>
-                                    <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="img/profile/profile-3.webp"
-                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                        <div class="align-self-center">
-                                            <a href="#">3 items just added to wish list by a user!</a>
-                                        </div>
-                                    </li>
-                                    <li class="pb-3 pb-3 border-bottom border-separator-light d-flex">
-                                        <img src="img/profile/profile-6.webp"
-                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                        <div class="align-self-center">
-                                            <a href="#">Kirby Peters just sent a new message!</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+
                 </ul>
                 <!-- Icons Menu End -->
 
@@ -441,7 +457,7 @@
                             </a>
                         </li>
                         <li class="mega">
-                            <a href="profile.html">
+                            <a href="profile_new.html">
                                 <span class="label"> After Login</span>
                             </a>
                         </li>
@@ -477,34 +493,28 @@
                             <div class="card-header border-0 pb-0">
                                 <ul class="nav nav-tabs nav-tabs-line card-header-tabs responsive-tabs" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#first"
-                                            role="tab" type="button" aria-selected="true">الملف الشخصي</button>
+                                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#first" role="tab" type="button" aria-selected="true">الملف الشخصي</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#second"
-                                            role="tab" type="button" aria-selected="false">الرسائل</button>
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#second" role="tab" type="button" aria-selected="false">الرسائل</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#third" role="tab"
-                                            type="button" aria-selected="false">تأكيد الهوية</button>
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#third" role="tab" type="button" aria-selected="false">تأكيد الهوية</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fourth"
-                                            role="tab" type="button" aria-selected="false">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fourth" role="tab" type="button" aria-selected="false">
                                             إشتراكاتي
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fifth" role="tab"
-                                            type="button" aria-selected="false">من زار ملفي</button>
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fifth" role="tab" type="button" aria-selected="false">من زار ملفي</button>
                                     </li>
                                     <!-- <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sixth" role="tab" type="button" aria-selected="false">Sixth</button>
                                     </li> -->
                                     <!-- An empty list to put overflowed links -->
                                     <li class="nav-item dropdown ms-auto pe-0 d-none responsive-tab-dropdown">
-                                        <button class="btn btn-icon btn-icon-only btn-foreground mt-2" type="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn btn-icon btn-icon-only btn-foreground mt-2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i data-cs-icon="more-horizontal"></i>
                                         </button>
                                         <ul class="dropdown-menu mt-2 dropdown-menu-end"></ul>
@@ -535,29 +545,22 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="mt-3">
-                                                            <img width="176px" height="176px" class="rounded-circle"
-                                                                src="homepage_img/man.png" alt="" srcset="">
+                                                            <img width="176px" height="176px" class="rounded-circle" src="homepage_img/man.png" alt="" srcset="">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 align-self-center">
                                                         <ul class="no-bullets">
-                                                            <li>خالد<img width="30px" src="verified.png" alt=""
-                                                                    srcset=""> </li>
+                                                            <li>خالد<img width="30px" src="verified.png" alt="" srcset=""> </li>
                                                             <li>أبوظبي - الامارات</li>
                                                             <li>40 سنة</li>
                                                             <li>
                                                                 <div class="star-row">
                                                                     <span class="fw-bold"> 2.6</span>
-                                                                    <i class="golden-star" data-acorn-icon="star"
-                                                                        data-acorn-size="20"></i>
-                                                                    <i class="golden-star" data-acorn-icon="star"
-                                                                        data-acorn-size="20"></i>
-                                                                    <i class="golden-star" data-acorn-icon="star"
-                                                                        data-acorn-size="20"></i>
-                                                                    <i class="golden-star" data-acorn-icon="star"
-                                                                        data-acorn-size="20"></i>
-                                                                    <i class="golden-star" data-acorn-icon="star"
-                                                                        data-acorn-size="20"></i>
+                                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
+                                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -571,9 +574,7 @@
                                                         مواصفات الزوج الذي أرغب الارتباط به
                                                     </h4>
                                                     <p>
-                                                        ابحث عن ارملة او مطلقة من دبي او بوظبي تقدر الحياة الزوجية و
-                                                        تخاف الله حرة وما يكون فيها عرج و تكون على قدر من الجمال و تكون
-                                                        موظفة.
+                                                        ابحث عن ارملة او مطلقة من دبي او بوظبي تقدر الحياة الزوجية و تخاف الله حرة وما يكون فيها عرج و تكون على قدر من الجمال و تكون موظفة.
                                                     </p>
 
                                                 </div>
@@ -583,7 +584,7 @@
                                                 data-acorn-icon="pen" class="me-2 ms-3"
                                                 data-acorn-size="17"></i>تعديل</button>
                                         <div class="user-info margin_top justify-content-lg-evenly">
-                                            <div class="user-info-item sepcifyed_width sepcifyed_width">
+                                            <div class="user-info-item  sepcifyed_width">
                                                 <span class="user-info-label">الجنسية</span>
                                                 <span class="user-info-value">الامارات</span>
                                             </div>
@@ -643,33 +644,32 @@
                                             </div>
                                             <!-- Add more items here -->
                                         </div>
-                                        <div class="user-info margin_top">
-                                            <div class="user-info-item sepcifyed_width1">
-                                                <span class="user-info-label pe-md-7 me-6">الحالة المادية</span>
+                                        <div class="user-info margin_top justify-content-lg-evenly">
+                                            <div class="user-info-item sepcifyed_width">
+                                                <span class="user-info-label">الحالة المادية</span>
                                                 <span class="user-info-value">متوسط</span>
                                             </div>
-                                            <div class="user-info-item sepcifyed_width1">
+                                            <div class="user-info-item sepcifyed_width">
                                                 <span class="user-info-label">الحالة الصحية</span>
                                                 <span class="user-info-value">ممتاز</span>
                                             </div>
-                                            <div class="user-info-item sepcifyed_width d-none">
+                                            <div class="user-info-item sepcifyed_width">
                                                 <span class="user-info-label">الالتزام الديني</span>
                                                 <span class="user-info-value">متدين</span>
                                             </div>
                                             <!-- Add more items here -->
                                         </div>
+
                                     </div>
                                     <div class="tab-pane fade" id="second" role="tabpanel">
                                         <div class="row">
-                                            <div class="col-md-5 col-sm-12">
-                                                <div class="scroll-out mb-2" style="height: 350px; overflow-x: hidden;">
+                                            <div class="col-md-3 col-sm-12">
+                                                <div class="scroll-out mb-2" style="height: 600px; overflow-x: hidden;">
                                                     <div class="list list_style">
                                                         <div class="row g-2 mb-2">
-                                                            <div class="col-2">
+                                                            <div class=" col-4">
                                                                 <div>
-                                                                    <img class="img_radius" width="55px" height="55px"
-                                                                        src="homepage_img/woman.png"
-                                                                        alt="User Profile Image">
+                                                                    <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
                                                                 </div>
                                                                 <!-- User profile image -->
                                                             </div>
@@ -678,110 +678,85 @@
                                                                     الزين
                                                                 </p>
                                                             </div>
-                                                            <div class="col-2 three_dots">
-                                                                <i class="mt-1" data-acorn-icon="more-vertical"
-                                                                    class="me-2" data-acorn-size="17"></i>
-                                                            </div>
+
                                                         </div>
                                                         <!-- Repeat this structure for other user profiles -->
                                                     </div>
-                                                    <hr style="margin: 0%;">
+
 
                                                     <div class="list list_style">
                                                         <div class="row g-2 mb-2">
-                                                            <div class="col-2">
+                                                            <div class=" col-4">
                                                                 <!-- User profile image -->
-                                                                <img class="img_radius" width="55px" height="55px"
-                                                                    src="homepage_img/woman.png"
-                                                                    alt="User Profile Image">
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
                                                             </div>
                                                             <div class="col-8">
                                                                 <p class="fw-bold">
                                                                     عميقة
                                                                 </p>
                                                             </div>
-                                                            <div class="col-2 three_dots">
-                                                                <i class="mt-1" data-acorn-icon="more-vertical"
-                                                                    class="me-2" data-acorn-size="17"></i>
-                                                            </div>
+
                                                         </div>
                                                         <!-- Repeat this structure for other user profiles -->
                                                     </div>
-                                                    <hr style="margin: 0%;">
+
 
                                                     <div class="list list_style">
                                                         <div class="row g-2 mb-2">
-                                                            <div class="col-2">
+                                                            <div class=" col-4">
                                                                 <!-- User profile image -->
-                                                                <img class="img_radius" width="55px" height="55px"
-                                                                    src="homepage_img/woman.png"
-                                                                    alt="User Profile Image">
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
                                                             </div>
                                                             <div class="col-8">
                                                                 <p class="fw-bold">
                                                                     بنت الدار
                                                                 </p>
                                                             </div>
-                                                            <div class="col-2 three_dots">
-                                                                <i class="mt-1" data-acorn-icon="more-vertical"
-                                                                    class="me-2" data-acorn-size="17"></i>
-                                                            </div>
+
                                                         </div>
                                                         <!-- Repeat this structure for other user profiles -->
                                                     </div>
-                                                    <hr style="margin: 0%;">
+
 
                                                     <div class="list list_style">
                                                         <div class="row g-2 mb-2">
-                                                            <div class="col-2">
+                                                            <div class=" col-4">
                                                                 <!-- User profile image -->
-                                                                <img class="img_radius" width="55px" height="55px"
-                                                                    src="homepage_img/woman.png"
-                                                                    alt="User Profile Image">
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
                                                             </div>
                                                             <div class="col-8">
                                                                 <p class="fw-bold">
                                                                     غالية
                                                                 </p>
                                                             </div>
-                                                            <div class="col-2 three_dots">
-                                                                <i class="mt-1" data-acorn-icon="more-vertical"
-                                                                    class="me-2" data-acorn-size="17"></i>
-                                                            </div>
+
                                                         </div>
                                                         <!-- Repeat this structure for other user profiles -->
                                                     </div>
-                                                    <hr style="margin: 0%;">
+
 
                                                     <div class="list list_style">
                                                         <div class="row g-2 mb-2">
-                                                            <div class="col-2">
+                                                            <div class=" col-4">
                                                                 <!-- User profile image -->
-                                                                <img class="img_radius" width="55px" height="55px"
-                                                                    src="homepage_img/woman.png"
-                                                                    alt="User Profile Image">
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
                                                             </div>
                                                             <div class="col-8">
                                                                 <p class="fw-bold">
                                                                     أم محمد
                                                                 </p>
                                                             </div>
-                                                            <div class="col-2 three_dots">
-                                                                <i class="mt-1" data-acorn-icon="more-vertical"
-                                                                    class="me-2" data-acorn-size="17"></i>
-                                                            </div>
+
                                                         </div>
                                                         <!-- Repeat this structure for other user profiles -->
                                                     </div>
-                                                    <hr style="margin: 0%;">
+
 
                                                     <div class="list list_style">
                                                         <div class="row g-2 mb-2">
-                                                            <div class="col-2">
+                                                            <div class=" col-4">
                                                                 <!-- User profile image -->
-                                                                <img class="img_radius" width="55px" height="55px"
-                                                                    src="homepage_img/woman.png"
-                                                                    alt="User Profile Image">
+                                                                <img class="img_radius" width="55px" height="55px" src="homepage_img/woman.png" alt="User Profile Image">
                                                             </div>
                                                             <div class="col-8">
                                                                 <p class="fw-bold">
@@ -789,48 +764,36 @@
 
                                                                 </p>
                                                             </div>
-                                                            <div class="col-2 three_dots">
-                                                                <i class="mt-1" data-acorn-icon="more-vertical"
-                                                                    class="me-2" data-acorn-size="17"></i>
-                                                            </div>
+
                                                         </div>
                                                         <!-- Repeat this structure for other user profiles -->
                                                     </div>
-                                                    <hr style="margin: 0%;">
+
 
                                                 </div>
 
 
 
                                             </div>
-                                            <div class="col-md-7 col-sm-12 d-flex">
+                                            <div class="col-md-9 col-sm-12 d-flex">
                                                 <div class="row d-flex flex-grow-1 overflow-hidden pb-2 h-100">
                                                     <div class="col h-100 d-flex" id="chatView">
                                                         <div class="flex-column h-100 w-100 d-flex" id="chatMode">
                                                             <div class="card h-100 mb-2">
-                                                                <div
-                                                                    class="card-body d-flex flex-column h-100 w-100 position-relative">
-                                                                    <div
-                                                                        class="d-flex flex-row align-items-center mb-3">
-                                                                        <div class="row g-0 sh-6 align-self-start"
-                                                                            id="contactTitle">
+                                                                <div class="card-body d-flex flex-column h-100 w-100 position-relative ">
+                                                                    <div class="d-flex flex-row align-items-center mb-3" style="height: 15px;">
+                                                                        <div class="row g-0 sh-6 align-self-start" id="contactTitle">
                                                                             <div class="col-auto">
-                                                                                <div
-                                                                                    class="sh-6 sw-6 d-inline-block position-relative">
-                                                                                    <img src="homepage_img/woman.png"
-                                                                                        class="img-fluid rounded-xl border border-2 border-foreground profile"
-                                                                                        alt="thumb">
-                                                                                    <i
-                                                                                        class="p-1 border border-1 border-foreground bg-primary position-absolute rounded-xl e-0 t-0 status"></i>
+                                                                                <div class="sh-6 sw-6 d-inline-block position-relative">
+                                                                                    <img src="homepage_img/woman.png" class="img-fluid rounded-xl border border-2 border-foreground profile" alt="thumb">
+                                                                                    <i class="p-1 border border-1 border-foreground bg-primary position-absolute rounded-xl e-0 t-0 status"></i>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col">
-                                                                                <div
-                                                                                    class="card-body d-flex flex-row pt-0 pb-0 pe-0 pe-0 ps-2 h-100 align-items-center justify-content-between">
+                                                                                <div class="card-body d-flex flex-row pt-0 pb-0 pe-0 pe-0 ps-2 h-100 align-items-center justify-content-between">
                                                                                     <div class="d-flex flex-column">
                                                                                         <div class="name">الزين</div>
-                                                                                        <div
-                                                                                            class="text-small text-muted last">
+                                                                                        <div class="text-small text-muted last">
                                                                                             Today 10:40</div>
                                                                                     </div>
                                                                                 </div>
@@ -840,157 +803,104 @@
                                                                     </div>
                                                                     <div class="separator-light mb-3"></div>
                                                                     <div class="h-100 mb-n2 scroll-out">
-                                                                        <div class="h-100 os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-overflow os-host-overflow-y os-host-transition"
-                                                                            id="chatContentContainer">
-                                                                            <div
-                                                                                class="os-resize-observer-host observed">
-                                                                                <div class="os-resize-observer"
-                                                                                    style="left: 0px; right: auto;">
+                                                                        <div class="h-100 os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-overflow os-host-overflow-y os-host-transition" id="chatContentContainer">
+                                                                            <div class="os-resize-observer-host observed">
+                                                                                <div class="os-resize-observer" style="left: 0px; right: auto;">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="os-size-auto-observer observed"
-                                                                                style="height: calc(100% + 1px); float: left;">
+                                                                            <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
                                                                                 <div class="os-resize-observer"></div>
                                                                             </div>
-                                                                            <div class="os-content-glue"
-                                                                                style="margin: 0px -15px; width: 1251px; height: 158px;">
+                                                                            <div class="os-content-glue" style="margin: 0px -15px; width: 1251px; height: 235px;">
                                                                             </div>
                                                                             <div class="os-padding">
-                                                                                <div class="os-viewport os-viewport-native-scrollbars-invisible"
-                                                                                    style="overflow-y: scroll;">
-                                                                                    <div class="os-content"
-                                                                                        style="padding: 0px 15px; height: 100%; width: 100%;">
+                                                                                <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
+                                                                                    <div class="os-content" style="padding: 0px 15px; height: 100%; width: 100%;">
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Hello
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Hello
                                                                                                             there!</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">How
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">How
                                                                                                             is it
                                                                                                             going?</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Here
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Here
                                                                                                             is the
                                                                                                             images you
                                                                                                             have asked
                                                                                                             for.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:21</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:21</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="d-inline-block sh-11 me-2 position-relative pb-4 rounded-md bg-separator-light text-alternate">
-                                                                                                        <a href="img/product/large/product-1.webp"
-                                                                                                            data-caption="cupcake.webp"
-                                                                                                            class="lightbox h-100 attachment">
-                                                                                                            <img src="img/product/large/product-1.webp"
-                                                                                                                class="h-100 rounded-md-top">
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class="d-inline-block sh-11 me-2 position-relative pb-4 rounded-md  text-alternate">
+                                                                                                        <a href="img/product/large/product-1.webp" data-caption="cupcake.webp" class="lightbox h-100 attachment">
+                                                                                                            <img src="img/product/large/product-1.webp" class="h-100 rounded-md-top">
                                                                                                         </a>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
                                                                                                     </div>
-                                                                                                    <div
-                                                                                                        class="d-inline-block sh-11 me-2 position-relative pb-4 rounded-md bg-separator-light text-alternate">
-                                                                                                        <a href="img/product/large/product-2.webp"
-                                                                                                            data-caption="cupcake.webp"
-                                                                                                            class="lightbox h-100 attachment">
-                                                                                                            <img src="img/product/large/product-2.webp"
-                                                                                                                class="h-100 rounded-md-top">
+                                                                                                    <div class="d-inline-block sh-11 me-2 position-relative pb-4 rounded-md  text-alternate">
+                                                                                                        <a href="img/product/large/product-2.webp" data-caption="cupcake.webp" class="lightbox h-100 attachment">
+                                                                                                            <img src="img/product/large/product-2.webp" class="h-100 rounded-md-top">
                                                                                                         </a>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:20</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Carrot
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Carrot
                                                                                                             cake pie
                                                                                                             sweet roll
                                                                                                             cake. Danish
@@ -1026,29 +936,21 @@
                                                                                                             croissant
                                                                                                             lemon drops
                                                                                                             soufflé.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:22</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:22</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Fruitcake
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Fruitcake
                                                                                                             chupa chups
                                                                                                             gingerbread
                                                                                                             sweet roll
@@ -1060,166 +962,116 @@
                                                                                                             liquorice
                                                                                                             wafer
                                                                                                             sweet.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:23</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">17:23</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end order-1">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/man.png"
-                                                                                                            class="img-fluid rounded-xl"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end order-1">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/man.png" class="img-fluid rounded-xl" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex justify-content-end align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-gradient-light d-inline-block rounded-md py-3 px-3 ps-7 text-white position-relative">
-                                                                                                        <span
-                                                                                                            class="text">Toffee
+                                                                                                <div class="col d-flex justify-content-end align-items-end content-container">
+                                                                                                    <div class="bg-gradient-light d-inline-block rounded-md py-3 px-3 ps-7 text-white position-relative">
+                                                                                                        <span class="text">Toffee
                                                                                                             croissant
                                                                                                             icing
                                                                                                             toffee.
                                                                                                             Sweet roll
                                                                                                             chupa chups
                                                                                                             marshmallow.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:10</span>
+                                                                                                        <span class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:10</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end order-1">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/man.png"
-                                                                                                            class="img-fluid rounded-xl"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end order-1">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/man.png" class="img-fluid rounded-xl" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex justify-content-end align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-gradient-light d-inline-block rounded-md py-3 px-3 ps-7 text-white position-relative">
-                                                                                                        <span
-                                                                                                            class="text">Chocolate
+                                                                                                <div class="col d-flex justify-content-end align-items-end content-container">
+                                                                                                    <div class="bg-gradient-light d-inline-block rounded-md py-3 px-3 ps-7 text-white position-relative">
+                                                                                                        <span class="text">Chocolate
                                                                                                             cake
                                                                                                             lollipop
                                                                                                             dessert.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:11</span>
+                                                                                                        <span class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:11</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Tootsie
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Tootsie
                                                                                                             roll sweet
                                                                                                             roll
                                                                                                             pudding.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">19:13</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">19:13</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Danish
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Danish
                                                                                                             pastry wafer
                                                                                                             halvah
                                                                                                             brownie
                                                                                                             muffin
                                                                                                             cookie
                                                                                                             cookie.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">19:15</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">19:15</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end order-1">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/man.png"
-                                                                                                            class="img-fluid rounded-xl"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end order-1">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/man.png" class="img-fluid rounded-xl" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex justify-content-end align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="d-inline-block sh-11 ms-2 position-relative pb-4 bg-primary rounded-md">
-                                                                                                        <a href="img/product/large/product-3.webp"
-                                                                                                            data-caption="cake.webp"
-                                                                                                            class="lightbox h-100 attachment">
-                                                                                                            <img src="img/product/large/product-3.webp"
-                                                                                                                class="h-100 rounded-md-top">
+                                                                                                <div class="col d-flex justify-content-end align-items-end content-container">
+                                                                                                    <div class="d-inline-block sh-11 ms-2 position-relative pb-4 bg-primary rounded-md">
+                                                                                                        <a href="img/product/large/product-3.webp" data-caption="cake.webp" class="lightbox h-100 attachment">
+                                                                                                            <img src="img/product/large/product-3.webp" class="h-100 rounded-md-top">
                                                                                                         </a>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:26</span>
+                                                                                                        <span class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:26</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end order-1">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/man.png"
-                                                                                                            class="img-fluid rounded-xl"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end order-1">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/man.png" class="img-fluid rounded-xl" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex justify-content-end align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-gradient-light d-inline-block rounded-md py-3 px-3 ps-7 text-white position-relative">
-                                                                                                        <span
-                                                                                                            class="text">Oat
+                                                                                                <div class="col d-flex justify-content-end align-items-end content-container">
+                                                                                                    <div class="bg-gradient-light d-inline-block rounded-md py-3 px-3 ps-7 text-white position-relative">
+                                                                                                        <span class="text">Oat
                                                                                                             cake gummies
                                                                                                             cheesecake
                                                                                                             cake biscuit
@@ -1228,81 +1080,56 @@
                                                                                                             cheesecake
                                                                                                             sesame
                                                                                                             snaps.</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:35</span>
+                                                                                                        <span class="position-absolute text-extra-small text-white opacity-75 b-2 s-2 time">19:35</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Thanks
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Thanks
                                                                                                             for the
                                                                                                             help!</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">21:22</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">21:22</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">And
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">And
                                                                                                             I see you
                                                                                                             soon!</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">21:22</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">21:22</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="mb-2 card-content">
-                                                                                            <div class="row g-2">
-                                                                                                <div
-                                                                                                    class="col-auto d-flex align-items-end">
-                                                                                                    <div
-                                                                                                        class="sw-5 sh-5 mb-1 d-inline-block position-relative">
-                                                                                                        <img src="homepage_img/woman.png"
-                                                                                                            class="img-fluid rounded-xl chat-profile"
-                                                                                                            alt="thumb">
+                                                                                            <div class="row g-2  list_style">
+                                                                                                <div class="col-auto d-flex align-items-end">
+                                                                                                    <div class="sw-5 sh-5 mb-1 d-inline-block position-relative">
+                                                                                                        <img src="homepage_img/woman.png" class="img-fluid rounded-xl chat-profile" alt="thumb">
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div
-                                                                                                    class="col d-flex align-items-end content-container">
-                                                                                                    <div
-                                                                                                        class="bg-separator-light d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate">
-                                                                                                        <span
-                                                                                                            class="text">Bye</span>
-                                                                                                        <span
-                                                                                                            class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">21:22</span>
+                                                                                                <div class="col d-flex align-items-end content-container">
+                                                                                                    <div class=" d-inline-block rounded-md py-3 px-3 pe-7 position-relative text-alternate bg-separator-light">
+                                                                                                        <span class="text">Bye</span>
+                                                                                                        <span class="position-absolute text-extra-small text-alternate opacity-75 b-2 e-2 time">21:22</span>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -1310,21 +1137,15 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div
-                                                                                class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
-                                                                                <div
-                                                                                    class="os-scrollbar-track os-scrollbar-track-off">
-                                                                                    <div class="os-scrollbar-handle"
-                                                                                        style="width: 100%; transform: translate(0px, 0px);">
+                                                                            <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
+                                                                                <div class="os-scrollbar-track os-scrollbar-track-off">
+                                                                                    <div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);">
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div
-                                                                                class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
-                                                                                <div
-                                                                                    class="os-scrollbar-track os-scrollbar-track-off">
-                                                                                    <div class="os-scrollbar-handle"
-                                                                                        style="height: 15.6035%; transform: translate(0px, 0px);">
+                                                                            <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
+                                                                                <div class="os-scrollbar-track os-scrollbar-track-off">
+                                                                                    <div class="os-scrollbar-handle" style="height: 15.6035%; transform: translate(0px, 0px);">
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1333,68 +1154,41 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="card">
-                                                                <div
-                                                                    class="card-body p-0 d-flex flex-row align-items-center px-3 py-3">
-                                                                    <textarea
-                                                                        class="form-control me-3 border-0 ps-2 py-2"
-                                                                        placeholder="Message" rows="1" id="chatInput"
-                                                                        style="overflow: hidden; overflow-wrap: break-word; height: 37px;"></textarea>
+                                                            <div class="card line_style">
+                                                                <div class="card-body p-0 d-flex flex-row align-items-center px-3 py-3">
+                                                                    <textarea class="form-control me-3 border-0 ps-2 py-2" placeholder="Message" rows="1" id="chatInput" style="overflow: hidden; overflow-wrap: break-word; height: 37px;"></textarea>
                                                                     <div class="d-flex flex-row">
-                                                                        <input class="file-upload d-none" type="file"
-                                                                            accept="image/*" id="chatAttachmentInput">
-                                                                        <button
-                                                                            class="btn btn-icon btn-icon-only btn-outline-primary mb-1 rounded-xl"
-                                                                            id="chatAttachButton" type="button">
+
+                                                                        <button class="btn btn-icon btn-icon-only btn-primary mb-1 rounded-xl ms-1" id="chatSendButton" type="button">
                                                                             <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="20" height="20"
-                                                                                viewBox="0 0 20 20" fill="none"
-                                                                                stroke="currentColor" stroke-width="1.5"
-                                                                                stroke-linecap="round"
-                                                                                stroke-linejoin="round"
-                                                                                class="acorn-icons acorn-icons-attachment undefined">
-                                                                                <path
-                                                                                    d="M17.617 9.4853L10.026 17.0763C10.026 17.0763 7.36397 19.7383 4.18199 16.5564C1.00001 13.3744 3.66204 10.7124 3.66204 10.7124L11.2531 3.12134C11.2531 3.12134 13.3744 1.00002 15.4957 3.12134C17.617 5.24265 15.4957 7.36398 15.4957 7.36398L8.41634 14.435C8.41634 14.435 7.36397 15.4957 6.30123 14.433C5.23849 13.3702 6.30331 12.3137 6.30331 12.3137L13.3744 5.24266">
-                                                                                </path>
-                                                                            </svg>
-                                                                        </button>
-                                                                        <button
-                                                                            class="btn btn-icon btn-icon-only btn-primary mb-1 rounded-xl ms-1"
-                                                                            id="chatSendButton" type="button">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="20" height="20"
-                                                                                viewBox="0 0 20 20" fill="none"
-                                                                                stroke="currentColor" stroke-width="1.5"
-                                                                                stroke-linecap="round"
-                                                                                stroke-linejoin="round"
-                                                                                class="acorn-icons acorn-icons-chevron-right undefined">
-                                                                                <path
-                                                                                    d="M7 4L12.6464 9.64645C12.8417 9.84171 12.8417 10.1583 12.6464 10.3536L7 16">
-                                                                                </path>
-                                                                            </svg>
+                                                                            width="20" height="20"
+                                                                            viewBox="0 0 20 20" fill="none"
+                                                                            stroke="currentColor" stroke-width="1.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="acorn-icons acorn-icons-chevron-left undefined">
+                                                                           <path
+                                                                               d="M13 4L7.35355 9.64645C7.15829 9.84171 7.15829 10.1583 7.35355 10.3536L13 16">
+                                                                           </path>
+                                                                       </svg>
+                                                                       
                                                                         </button>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card flex-column h-100 w-100 bg-gradient-single-2 d-none"
-                                                            id="callMode">
-                                                            <div
-                                                                class="bg-vertical-ornament-3 w-100 h-100 d-flex flex-column justify-content-between align-items-center">
-                                                                <div
-                                                                    class="card-body d-flex align-items-center flex-column flex-grow-1 w-100">
+                                                        <div class="card flex-column h-100 w-100 bg-gradient-single-2 d-none" id="callMode">
+                                                            <div class="bg-vertical-ornament-3 w-100 h-100 d-flex flex-column justify-content-between align-items-center">
+                                                                <div class="card-body d-flex align-items-center flex-column flex-grow-1 w-100">
                                                                     <div class="sw-10 mb-2 position-relative">
-                                                                        <img src="img/profile/profile-1.webp"
-                                                                            class="img-fluid rounded-xl border border-2 border-foreground profile"
-                                                                            alt="thumb">
+                                                                        <img src="img/profile/profile-1.webp" class="img-fluid rounded-xl border border-2 border-foreground profile" alt="thumb">
                                                                     </div>
                                                                     <div class="name text-white">Blaine Cottrell</div>
                                                                     <div class="text-white text-small time">00:00:00
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-body d-flex flex-grow-0">
-                                                                    <button
-                                                                        class="btn btn-foreground btn-icon btn-icon-only me-2">
+                                                                    <button class="btn btn-foreground btn-icon btn-icon-only me-2">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="20" height="20" viewBox="0 0 20 20"
                                                                             fill="none" stroke="currentColor"
@@ -1407,8 +1201,7 @@
                                                                             <circle cx="10" cy="11" r="3"></circle>
                                                                         </svg>
                                                                     </button>
-                                                                    <button
-                                                                        class="btn btn-foreground btn-icon btn-icon-only me-2">
+                                                                    <button class="btn btn-foreground btn-icon btn-icon-only me-2">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="20" height="20" viewBox="0 0 20 20"
                                                                             fill="none" stroke="currentColor"
@@ -1423,8 +1216,7 @@
                                                                             </path>
                                                                         </svg>
                                                                     </button>
-                                                                    <button class="btn btn-foreground btn-icon"
-                                                                        id="endCallButton">
+                                                                    <button class="btn btn-foreground btn-icon" id="endCallButton">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="20" height="20" viewBox="0 0 20 20"
                                                                             fill="none" stroke="currentColor"
@@ -1442,9 +1234,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- This is for Second Page -->
+
                                                 <!-- <div class="backgound_color textcenter">المعذره لايمكنك مراسلة هذا العضو!!
-                                                    <br><a class="text-dark" href="/pricing" class="text-decoration-none"><strong>انقر هنا للاشتراك في الخدمه</strong></a>
-                                                </div> -->
+                                                        <br><a class="text-dark" href="/pricing" class="text-decoration-none"><strong>انقر هنا للاشتراك في الخدمه</strong></a>
+                                                    </div> -->
                                             </div>
                                         </div>
 
@@ -1465,13 +1259,10 @@
                                                 <h4 class="fw-bold letter_spacing pe-4">
                                                     تأكيد الهوية الشخصية
                                                 </h4>
-                                                <h4 class="fw-light letter_spacing pe-4"> الاسم كاملاً حسب الهوية
-                                                    الشخصية
+                                                <h4 class="fw-light letter_spacing pe-4"> الاسم كاملاً حسب الهوية الشخصية
                                                 </h4>
                                                 <form action="">
-                                                    <input type="text" name="topic" id="topic"
-                                                        class="form-control input_background"
-                                                        placeholder="الاسم كاملاً حسب الهوية الشخصية...">
+                                                    <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الاسم كاملاً حسب الهوية الشخصية...">
                                                 </form>
                                                 <!-- </div>
                                                 </div> -->
@@ -1542,48 +1333,107 @@
                 </div>
             </div>
         </main>
+    </div>
+    <footer class="footer ">
+        <div class="row d-flex justify-content-center p-7" style="width: 99% !important;">
+            <!-- Large screens: 3 columns, each col-3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 line_height_footer">
+                <h4 class="white fw-bold mb-6">احصل على المساعدة</h4>
+                <div>
+                    <a class="white fw-bold text_decoration" href="#">
+                        الاسئلة الأكثر شيوعا
+                    </a>
+                </div>
+                <div>
+                    <a class="white fw-bold text_decoration font_size" href="about.html">
+                    من نحن
+                    </a>
+                </div>
+                <div>
+                    <a class="white fw-bold text_decoration font_size" href="pricing.html">
+                        الباقات
+                    </a>
+                </div>
+                <div>
+                    <a class="white fw-bold text_decoration font_size" href="pricing.html">
+                        خدمات
+                    </a>
+                </div>
+                <div>
+                    <a class="white fw-bold text_decoration font_size" href="pricing.html">
+                        المدونة
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 line_height_footer">
+                <h4 class="white fw-bold mb-6"> أعطنا رأيك</h4>
+                <textarea class="form-control blue_background" name="" id="" cols="25" rows="10" placeholder=" ما رأيك في موقع تَوَافِيْق " style="color:#fff;"></textarea>
+                <button type="button" class="btn btn-primary mb-1 mt-4">Primary</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 line_height_footer">
+                <h4 class="white fw-bold mb-6">تواصل معنا</h4>
+                <div class="ps-4 pb-7 white">
+                    <div class="d-flex ">
+                        <i data-acorn-icon="phone" class="ms-2" data-acorn-size="17"></i>
+                        <p>+971 55 505 5911</p>
+                    </div>
+                    <div class="d-flex"> <i data-acorn-icon="email" class="ms-2" data-acorn-size="17"></i>
+                        <p>info@tawafeeq.com</p>
+                    </div>
+                    <div class="d-flex"> <i data-acorn-icon="pin" class="ms-2" data-acorn-size="17"></i>
+                        <p>الامارات - دبي</p>
+                    </div>
 
-        <!-- Search Modal End -->
+                    <div class="pt-3">
+                        <i data-acorn-icon="facebook" class="ms-2" data-acorn-size="24"></i>
+                        <i data-acorn-icon="twitter" class="ms-2" data-acorn-size="24"></i>
+                        <i data-acorn-icon="instagram" class="ms-2" data-acorn-size="24"></i>
+                    </div>
 
-        <!-- Vendor Scripts Start -->
-        <script src="js/vendor/jquery-3.5.1.min.js"></script>
-        <script src="js/vendor/bootstrap.bundle.min.js"></script>
-        <script src="js/vendor/OverlayScrollbars.min.js"></script>
-        <script src="js/vendor/autoComplete.min.js"></script>
-        <script src="js/vendor/clamp.min.js"></script>
-        <script src="js/vendor/glide.min.js"></script>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vendor Scripts Start -->
+    <script src="js/vendor/jquery-3.5.1.min.js "></script>
+    <script src="js/vendor/bootstrap.bundle.min.js "></script>
+    <script src="js/vendor/OverlayScrollbars.min.js "></script>
+    <script src="js/vendor/autoComplete.min.js "></script>
+    <script src="js/vendor/clamp.min.js "></script>
+    <script src="js/vendor/glide.min.js "></script>
 
 
-        <script src="icon/acorn-icons.js"></script>
-        <script src="icon/acorn-icons-interface.js"></script>
+    <script src="icon/acorn-icons.js "></script>
+    <script src="icon/acorn-icons-interface.js "></script>
 
-        <script src="js/cs/scrollspy.js"></script>
+    <script src="js/cs/scrollspy.js "></script>
 
-        <script src="js/vendor/select2.full.min.js"></script>
+    <script src="js/vendor/select2.full.min.js "></script>
 
-        <script src="js/vendor/datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="js/vendor/datepicker/bootstrap-datepicker.min.js "></script>
 
-        <script src="js/vendor/tagify.min.js"></script>
+    <script src="js/vendor/tagify.min.js "></script>
 
-        <!-- Vendor Scripts End -->
+    <!-- Vendor Scripts End -->
 
-        <!-- Template Base Scripts Start -->
-        <script src="font/CS-Line/csicons.min.js"></script>
-        <script src="js/base/helpers.js"></script>
-        <script src="js/base/globals.js"></script>
-        <script src="js/base/nav.js"></script>
-        <script src="js/base/search.js"></script>
-        <script src="js/base/settings.js"></script>
-        <script src="js/base/init.js"></script>
-        <!-- Page Specific Scripts Start -->
-        <script src="js/cs/glide.custom.js"></script>
-        <script src="js/plugins/carousels.js"></script>
-        <script src="js/common.js"></script>
-        <script src="js/scripts.js"></script>
+    <!-- Template Base Scripts Start -->
+    <script src="font/CS-Line/csicons.min.js "></script>
+    <script src="js/base/helpers.js "></script>
+    <script src="js/base/globals.js "></script>
+    <script src="js/base/nav.js "></script>
+    <script src="js/base/search.js "></script>
+    <script src="js/base/settings.js "></script>
+    <script src="js/base/init.js "></script>
+    <!-- Page Specific Scripts Start -->
+    <script src="js/cs/glide.custom.js "></script>
+    <script src="js/plugins/carousels.js "></script>
+    <script src="js/common.js "></script>
+    <script src="js/scripts.js "></script>
 
-        <script src="js/forms/layouts.js"></script>
+    <script src="js/forms/layouts.js "></script>
 
-        <!-- Page Specific Scripts End -->
+    <!-- Page Specific Scripts End -->
 
 </body>
 
