@@ -158,3 +158,10 @@
         /* display: none; */
     }
 }
+
+@media screen and (max-width: 375px) {
+    .pill_styling {
+        top: 10.8rem !important;
+        padding-top: 4px !important;
+    }
+}

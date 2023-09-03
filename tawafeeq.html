@@ -120,12 +120,23 @@
         }
         
         .pill_styling {
-            top: 8.9rem !important;
-            padding-top: 4px !important;
+            top: 11.4rem;
+            padding-top: 4px;
         }
         
         .red_dot {
             background: rgb(241, 92, 92);
+            border: 2px solid rgb(255, 255, 255);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            left: 21px;
+            margin-top: 2px;
+            margin-left: 64px;
+        }
+        
+        .green_dot {
+            background: rgb(30, 214, 122);
             border: 2px solid rgb(255, 255, 255);
             width: 12px;
             height: 12px;
@@ -139,716 +150,1158 @@
 </head>
 
 <body class="letter-spacing">
-    <div class="container">
-        <div id="root">
-            <div id="nav" class="nav-container d-flex">
-                <div class="nav-content d-flex">
-                    <!-- Logo Start -->
-                    <div class="logo position-relative d-none">
-                        <a href="Dashboards.Default.html">
-                            <!-- Logo can be added directly -->
-                            <!-- <img src="img/logo/logo-white.svg" alt="logo" /> -->
+    <!-- <div class="container"> -->
+    <div id="root">
+        <div id="nav" class="nav-container d-flex">
+            <div class="nav-content d-flex">
+                <!-- Logo Start -->
+                <div class="logo position-relative d-none">
+                    <a href="Dashboards.Default.html">
+                        <!-- Logo can be added directly -->
+                        <!-- <img src="img/logo/logo-white.svg" alt="logo" /> -->
 
-                            <!-- Or added via css to provide different ones for different color themes -->
-                            <div class="img"></div>
-                        </a>
+                        <!-- Or added via css to provide different ones for different color themes -->
+                        <div class="img"></div>
+                    </a>
+                </div>
+                <!-- Logo End -->
+
+                <!-- Language Switch Start -->
+                <div class="language-switch-container d-none">
+                    <button class="btn btn-empty language-button dropdown-toggle d-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</button>
+                    <div class="dropdown-menu d-none">
+                        <a href="#" class="dropdown-item">DE</a>
+                        <a href="#" class="dropdown-item active">EN</a>
+                        <a href="#" class="dropdown-item">ES</a>
                     </div>
-                    <!-- Logo End -->
+                </div>
+                <!-- Language Switch End -->
 
-                    <!-- Language Switch Start -->
-                    <div class="language-switch-container d-none">
-                        <button class="btn btn-empty language-button dropdown-toggle d-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</button>
-                        <div class="dropdown-menu d-none">
-                            <a href="#" class="dropdown-item">DE</a>
-                            <a href="#" class="dropdown-item active">EN</a>
-                            <a href="#" class="dropdown-item">ES</a>
-                        </div>
-                    </div>
-                    <!-- Language Switch End -->
-
-                    <!-- User Menu Start -->
-                    <div class="user-container d-flex d-none">
-                        <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="profile" alt="profile" src="img/profile/profile-9.webp" />
-                            <div class="name">Lisa Jackson</div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end user-menu wide">
-                            <div class="row mb-3 ms-0 me-0">
-                                <div class="col-12 ps-1 mb-2">
-                                    <div class="text-extra-small text-primary">ACCOUNT</div>
-                                </div>
-                                <div class="col-6 ps-1 pe-1">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">User Info</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Preferences</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Calendar</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 pe-1 ps-1">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">Security</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Billing</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                <!-- User Menu Start -->
+                <div class="user-container d-flex d-none">
+                    <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="profile" alt="profile" src="img/profile/profile-9.webp" />
+                        <div class="name">Lisa Jackson</div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end user-menu wide">
+                        <div class="row mb-3 ms-0 me-0">
+                            <div class="col-12 ps-1 mb-2">
+                                <div class="text-extra-small text-primary">ACCOUNT</div>
                             </div>
-                            <div class="row mb-1 ms-0 me-0">
-                                <div class="col-12 p-1 mb-2 pt-2">
-                                    <div class="text-extra-small text-primary">APPLICATION</div>
-                                </div>
-                                <div class="col-6 ps-1 pe-1">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">Themes</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Language</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 pe-1 ps-1">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">Devices</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Storage</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="col-6 ps-1 pe-1">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">User Info</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Preferences</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Calendar</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="row mb-1 ms-0 me-0">
-                                <div class="col-12 p-1 mb-3 pt-3">
-                                    <div class="separator-light"></div>
-                                </div>
-                                <div class="col-6 ps-1 pe-1">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">
-                                                <i data-acorn-icon="help" class="me-2" data-acorn-size="17"></i>
-                                                <span class="align-middle">Help</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i data-acorn-icon="file-text" class="me-2" data-acorn-size="17"></i>
-                                                <span class="align-middle">Docs</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 pe-1 ps-1">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">
-                                                <i data-acorn-icon="gear" class="me-2" data-acorn-size="17"></i>
-                                                <span class="align-middle">Settings</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i data-acorn-icon="logout" class="me-2" data-acorn-size="17"></i>
-                                                <span class="align-middle">Logout</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="col-6 pe-1 ps-1">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">Security</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Billing</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <!-- User Menu End -->
-
-                    <!-- Icons Menu Start -->
-                    <ul class="list-unstyled list-inline text-center menu-icons">
-
-                        <li class="list-inline-item d-none">
-                            <a href="#" id="pinButton" class="pin-button">
-                                <i data-acorn-icon="lock-on" class="unpin" data-acorn-size="18"></i>
-                                <i data-acorn-icon="lock-off" class="pin" data-acorn-size="18"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" id="colorButton">
-                                <i data-acorn-icon="moon" class="light" data-acorn-size="18"></i>
-                                <i data-acorn-icon="sun" class="dark" data-acorn-size="18"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item d-none">
-                            <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true" aria-expanded="false" class="notification-button">
-                                <div class="position-relative d-inline-flex">
-                                    <i data-acorn-icon="bell" data-acorn-size="18"></i>
-                                    <span class="position-absolute notification-dot rounded-xl"></span>
-                                </div>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out" id="notifications">
-                                <div class="scroll">
-                                    <ul class="list-unstyled border-last-none">
-                                        <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                            <img src="img/profile/profile-1.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                            <div class="align-self-center">
-                                                <a href="#">Joisse Kaycee just sent a new comment!</a>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                            <img src="img/profile/profile-2.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                            <div class="align-self-center">
-                                                <a href="#">New order received! It is total $147,20.</a>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                                            <img src="img/profile/profile-3.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                            <div class="align-self-center">
-                                                <a href="#">3 items just added to wish list by a user!</a>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3 pb-3 border-bottom border-separator-light d-flex">
-                                            <img src="img/profile/profile-6.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                                            <div class="align-self-center">
-                                                <a href="#">Kirby Peters just sent a new message!</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="row mb-1 ms-0 me-0">
+                            <div class="col-12 p-1 mb-2 pt-2">
+                                <div class="text-extra-small text-primary">APPLICATION</div>
                             </div>
+                            <div class="col-6 ps-1 pe-1">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">Themes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Language</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 pe-1 ps-1">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">Devices</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Storage</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mb-1 ms-0 me-0">
+                            <div class="col-12 p-1 mb-3 pt-3">
+                                <div class="separator-light"></div>
+                            </div>
+                            <div class="col-6 ps-1 pe-1">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">
+                                            <i data-acorn-icon="help" class="me-2" data-acorn-size="17"></i>
+                                            <span class="align-middle">Help</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-acorn-icon="file-text" class="me-2" data-acorn-size="17"></i>
+                                            <span class="align-middle">Docs</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 pe-1 ps-1">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">
+                                            <i data-acorn-icon="gear" class="me-2" data-acorn-size="17"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-acorn-icon="logout" class="me-2" data-acorn-size="17"></i>
+                                            <span class="align-middle">Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- User Menu End -->
+
+                <!-- Icons Menu Start -->
+                <ul class="list-unstyled list-inline text-center menu-icons">
+
+                    <li class="list-inline-item d-none">
+                        <a href="#" id="pinButton" class="pin-button">
+                            <i data-acorn-icon="lock-on" class="unpin" data-acorn-size="18"></i>
+                            <i data-acorn-icon="lock-off" class="pin" data-acorn-size="18"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" id="colorButton">
+                            <i data-acorn-icon="moon" class="light" data-acorn-size="18"></i>
+                            <i data-acorn-icon="sun" class="dark" data-acorn-size="18"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item d-none">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true" aria-expanded="false" class="notification-button">
+                            <div class="position-relative d-inline-flex">
+                                <i data-acorn-icon="bell" data-acorn-size="18"></i>
+                                <span class="position-absolute notification-dot rounded-xl"></span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out" id="notifications">
+                            <div class="scroll">
+                                <ul class="list-unstyled border-last-none">
+                                    <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
+                                        <img src="img/profile/profile-1.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <div class="align-self-center">
+                                            <a href="#">Joisse Kaycee just sent a new comment!</a>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
+                                        <img src="img/profile/profile-2.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <div class="align-self-center">
+                                            <a href="#">New order received! It is total $147,20.</a>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
+                                        <img src="img/profile/profile-3.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <div class="align-self-center">
+                                            <a href="#">3 items just added to wish list by a user!</a>
+                                        </div>
+                                    </li>
+                                    <li class="pb-3 pb-3 border-bottom border-separator-light d-flex">
+                                        <img src="img/profile/profile-6.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                        <div class="align-self-center">
+                                            <a href="#">Kirby Peters just sent a new message!</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Icons Menu End -->
+
+                <!-- Menu Start -->
+                <div class="menu-container flex-grow-1">
+                    <ul id="menu" class="menu">
+                        <li class="">
+                            <a href="tawafeeq.html">
+                                <span>الصفحة الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <span class="label">من نحن</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">
+                                <span class="label">الباقات</span>
+                            </a>
+
+                        </li>
+                        <li class="mega">
+                            <a href="contact.html">
+                                <span class="label">تواصل معنا</span>
+                            </a>
+                        </li>
+                        <li class="mega">
+                            <a href="login_page.html">
+                                <span class="label">تسجيل الدخول </span>
+                            </a>
+                        </li>
+                        <li class="mega">
+                            <a href="register.html">
+                                <span class="label"> تسجيل</span>
+                            </a>
+                        </li>
+                        <li class="mega">
+                            <a href="profile_new.html">
+                                <span class="label"> After Login</span>
+                            </a>
                         </li>
                     </ul>
-                    <!-- Icons Menu End -->
-
-                    <!-- Menu Start -->
-                    <div class="menu-container flex-grow-1">
-                        <ul id="menu" class="menu">
-                            <li class="">
-                                <a href="tawafeeq.html">
-                                    <span>الصفحة الرئيسية</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="about.html">
-                                    <span class="label">من نحن</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">
-                                    <span class="label">الباقات</span>
-                                </a>
-
-                            </li>
-                            <li class="mega">
-                                <a href="contact.html">
-                                    <span class="label">تواصل معنا</span>
-                                </a>
-                            </li>
-                            <li class="mega">
-                                <a href="login_page.html">
-                                    <span class="label">تسجيل الدخول </span>
-                                </a>
-                            </li>
-                            <li class="mega">
-                                <a href="register.html">
-                                    <span class="label"> تسجيل</span>
-                                </a>
-                            </li>
-                            <li class="mega">
-                                <a href="profile_new.html">
-                                    <span class="label"> After Login</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Menu End -->
-
-                    <!-- Mobile Buttons Start -->
-                    <div class="mobile-buttons-container">
-                        <!-- Scrollspy Mobile Button Start -->
-
-                        <!-- Scrollspy Mobile Button End -->
-
-                        <!-- Scrollspy Mobile Dropdown Start -->
-                        <div class="dropdown-menu dropdown-menu-end" id="scrollSpyDropdown"></div>
-                        <!-- Scrollspy Mobile Dropdown End -->
-
-                        <!-- Menu Button Start -->
-                        <a href="#" id="mobileMenuButton" class="menu-button">
-                            <i data-acorn-icon="menu"></i>
-                        </a>
-                        <!-- Menu Button End -->
-                    </div>
-                    <!-- Mobswiper-slide-duplicate-nextile Buttons End -->
                 </div>
-                <div class="nav-shadow"></div>
+                <!-- Menu End -->
+
+                <!-- Mobile Buttons Start -->
+                <div class="mobile-buttons-container">
+                    <!-- Scrollspy Mobile Button Start -->
+
+                    <!-- Scrollspy Mobile Button End -->
+
+                    <!-- Scrollspy Mobile Dropdown Start -->
+                    <div class="dropdown-menu dropdown-menu-end" id="scrollSpyDropdown"></div>
+                    <!-- Scrollspy Mobile Dropdown End -->
+
+                    <!-- Menu Button Start -->
+                    <a href="#" id="mobileMenuButton" class="menu-button">
+                        <i data-acorn-icon="menu"></i>
+                    </a>
+                    <!-- Menu Button End -->
+                </div>
+                <!-- Mobswiper-slide-duplicate-nextile Buttons End -->
             </div>
-            <main>
-                <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-0"></div>
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 me-md-7">
-                        <div class="container">
-                            <div class="page-title-container">
-                                <div class="mb-5 mt-5">
-                                    <div class="row custom-row">
-
-                                        <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12 pb-3 p-sm-0">
-                                            <div class="switch-field mb-0">
-                                                <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
-                                                <label class="rounded-0 radius_top_right p-3 fw-bold" for="radio-one" style="width: 50%;">ابحث عن زوج</label>
-                                                <input type="radio" id="radio-two" name="switch-one" value="no" />
-                                                <label class="rounded-0 radius_top_left p-3 fw-bold" for="radio-two" style="width: 50%;">ابحث عن زوجة</label>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-body pt-3 pb-7">
-
-                                                    <div class="ps-4 pb-5">
-                                                        <h4 class="fw-semibold mb-0">اعثر على شريك حياتك </h4><br>
-                                                        <form action="">
-                                                            <h5 class="fw-semibold mb-1">الاسم</h5>
-                                                            <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الاسم">
-                                                            <div class="row mt-3">
-                                                                <div class="col-6 ps-0">
-                                                                    <h5 class="fw-semibold mb-1">الجنسية</h5>
-                                                                    <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الجنسية">
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <h5 class="fw-semibold mb-1">مكان الاقامة</h5>
-                                                                    <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="مكان الاقامة">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mt-3">
-                                                                <div class="col-4 ps-0">
-                                                                    <h5 class="fw-semibold mb-1">العمر من </h5>
-                                                                    <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="العمر من">
-                                                                </div>
-                                                                <div class="col-4 ps-0">
-                                                                    <h5 class="fw-semibold mb-1">العمر الى</h5>
-                                                                    <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="العمر الى">
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <h5 class="fw-semibold mb-1"> الحالة الاجتماعية</h5>
-                                                                    <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الحالة الاجتماعية">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-3">
-                                                                    <button class="btn btn-xl btn-primary mt-3" type="button">تسجيل</button>
-                                                                </div>
-
-                                                            </div>
-                                                        </form>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 p-sm-0">
-                                            <div class="">
-                                                <img class="width_couple_pic" width="400px" src="find_partner.png" alt="" srcset="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-0"></div>
-                    </div>
-                    <!-- Layout Footer End -->
-                </div>
-                <!-- Basic Start -->
-                <section class="scroll-section section_align" dir="ltr" id="basic">
-                    <h2 class="" dir="rtl"><span class="fw-bold fs-4">الأعضاء الجدد</span>(عرض الكل)</h2>
-                    <div class="slide-container swiper">
-                        <div class="slide-content">
-                            <div class="card-wrapper swiper-wrapper">
-                                <div class="card swiper-slide" style="width: unset !important;">
-                                    <div class=" p-0 width_silder ">
-                                        <div class="card" dir="rtl">
-                                            <div>
-                                                <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
-                                                <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
-                                                <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
-                                                <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
-                                            </div>
-                                            <div class="card-body">
-
-                                                <h5 class="card-title fw-bold">بومحمد _44</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                            <div class="d-flex justify-content-end ps-4 pb-3">
-                                                <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card swiper-slide">
-                                    <div class="glide__slide" dir="rtl">
-                                        <div class="card mb-5">
-                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">Abdullah Alkababi</h5>
-                                                <div class="star-row">
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                    <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                                </div>
-                                                <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next swiper-navBtn"></div>
-                        <div class="swiper-button-prev swiper-navBtn"></div>
-                        <!-- <div class="swiper-pagination"></div> -->
-                    </div>
-
-                    <h2 class="" dir="rtl"><span class="fw-bold fs-4">الأعضاء المتواجدون حاليًا</span>(عرض الكل)</h2>
-                    <div class="row justify-content-center">
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 width_silder">
-                            <div class="card mb-5" dir="rtl">
-                                <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                <div class="card-body">
-                                    <p class="card-title "><span class="fw-200">نبض الأمل</span> </p>
-                                    <div class="star-row">
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                    </div>
-                                    <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 width_silder">
-                            <div class="card mb-5" dir="rtl">
-                                <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
-                                <div class="card-body">
-                                    <h5 class="card-title">نبض الأمل </h5>
-                                    <div class="star-row">
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="20"></i>
-                                    </div>
-                                    <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 p-0 width_silder ">
-                            <div class="card" dir="rtl">
-                                <div>
-                                    <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
-                                    <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
-                                    <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
-                                    <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
-                                </div>
-                                <div class="card-body">
-
-                                    <h5 class="card-title fw-bold">بومحمد _44</h5>
-                                    <div class="star-row">
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                        <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
-                                    </div>
-                                    <p class="card-text">29 سنة أبوظبي - الامارات</p>
-                                </div>
-                                <div class="d-flex justify-content-end ps-4 pb-3">
-                                    <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="" dir="rtl"><span class="fw-bold fs-4">خدماتنا</span>(عرض الكل)</h2>
-                    <div class="row justify-content-center">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="card h-100 hover-scale-up background_color pe-3 backgound_1">
-                                <div class="card-body pb-0 ps-0">
-                                    <div class="d-flex flex-column">
-                                        <div class="display-4"> خدمات تجهيز الأفراح </div>
-                                    </div>
-
-                                    <p class="line_height fw-light">المحامي الاقرب لك للحصول على استشارة المستشار القانوني المختص في الاحوال الشخصية في حدوث اي خلاف بعقد النجاح او مشاكل زوجية او مشاكل عائلية لمعرفة ما لك وما عليك في قانون دولتك. إخلاء مسؤولية: ( أي معاملة مع مزودي الخدمات
-                                        على مسؤوليتك الخاصة )
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
-                            <div class="card h-100 hover-scale-up backgound_2 background_color pe-3">
-                                <div class="card-body pb-0">
-                                    <div class="d-flex flex-column">
-                                        <div class="display-4"> خدمة مراكز الفحص الطبي </div>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <div class="d-flex flex-column">
-                                            <p class="line_height fw-light">المحامي الاقرب لك للحصول على استشارة المستشار القانوني المختص في الاحوال الشخصية في حدوث اي خلاف بعقد النجاح او مشاكل زوجية او مشاكل عائلية لمعرفة ما لك وما عليك في قانون دولتك. إخلاء مسؤولية: ( أي معاملة مع
-                                                مزودي الخدمات على مسؤوليتك الخاصة )
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+            <div class="nav-shadow"></div>
         </div>
+        <main>
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-0"></div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 me-md-7">
+                    <div class="container">
+                        <div class="page-title-container">
+                            <div class="mb-5 mt-5">
+                                <div class="row custom-row">
+
+                                    <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12 pb-3 p-sm-0">
+                                        <div class="switch-field mb-0">
+                                            <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
+                                            <label class="rounded-0 radius_top_right p-3 fw-bold" for="radio-one" style="width: 50%;">ابحث عن زوج</label>
+                                            <input type="radio" id="radio-two" name="switch-one" value="no" />
+                                            <label class="rounded-0 radius_top_left p-3 fw-bold" for="radio-two" style="width: 50%;">ابحث عن زوجة</label>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body pt-3 pb-7">
+
+                                                <div class="ps-4 pb-5">
+                                                    <h4 class="fw-semibold mb-0">اعثر على شريك حياتك </h4><br>
+                                                    <form action="">
+                                                        <h5 class="fw-semibold mb-1">الاسم</h5>
+                                                        <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الاسم">
+                                                        <div class="row mt-3">
+                                                            <div class="col-6 ps-0">
+                                                                <h5 class="fw-semibold mb-1">الجنسية</h5>
+                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الجنسية">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <h5 class="fw-semibold mb-1">مكان الاقامة</h5>
+                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="مكان الاقامة">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                            <div class="col-4 ps-0">
+                                                                <h5 class="fw-semibold mb-1">العمر من </h5>
+                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="العمر من">
+                                                            </div>
+                                                            <div class="col-4 ps-0">
+                                                                <h5 class="fw-semibold mb-1">العمر الى</h5>
+                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="العمر الى">
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <h5 class="fw-semibold mb-1"> الحالة الاجتماعية</h5>
+                                                                <input type="text" name="topic" id="topic" class="form-control input_background" placeholder="الحالة الاجتماعية">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <button class="btn btn-xl btn-primary mt-3" type="button">تسجيل</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 p-sm-0">
+                                        <div class="">
+                                            <img class="width_couple_pic" width="400px" src="find_partner.png" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-0"></div>
+                </div>
+                <!-- Layout Footer End -->
+            </div>
+            <!-- Basic Start -->
+            <section class="scroll-section" dir="ltr" id="basic">
+                <h2 class="" dir="rtl"><span class="fw-bold fs-4">الأعضاء الجدد</span>(عرض الكل)</h2>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" green_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" green_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" green_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+
+                <h2 class="" dir="rtl"><span class="fw-bold fs-4">الأعضاء المتواجدون حاليًا</span>(عرض الكل)</h2>
+                <!-- Second Slider -->
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" green_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" green_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" green_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/woman.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide" style="width: unset !important;">
+                                <div class=" p-0 width_silder ">
+                                    <div class="card" dir="rtl">
+                                        <div>
+                                            <span class="badge rounded-pill bg-light position-absolute s-2 pill_styling z-index-1 fw-bolder" style=" font-size: 9px;">منذ دقيقة</span>
+                                            <div class=" red_dot me-1 position-absolute s-2 pill_styling z-index-1"></div>
+                                            <span class="badge rounded-pill bg-primary me-1 position-absolute s-2 pill_styling z-index-1 fw-bolder" style="left: 21px;margin-left:105px; font-size: 9px;margin-left: 85px;">منذ 30 دقيقة</span>
+                                            <img src="homepage_img/man.png" class="card-img-top" alt="card image" />
+                                        </div>
+                                        <div class="card-body pb-2">
+
+                                            <h5 class="card-title fw-bold">بومحمد _44</h5>
+                                            <div class="star-row">
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                                <i class="golden-star" data-acorn-icon="star" data-acorn-size="15"></i>
+                                            </div>
+                                            <p class="card-text mb-1" style="font-size: 13px;">29 سنة أبوظبي - الامارات</p>
+                                            <p class="mb-0">أبحث عن:يكون اماراتي.. غير مدخن ....</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between ps-4 pb-3">
+                                            <div class="me-3">
+                                                <i data-acorn-icon="star" class="me-2" data-acorn-size="17"></i>
+                                                <i data-acorn-icon="message" class="me-2" data-acorn-size="17"></i>
+                                            </div>
+                                            <i data-acorn-icon="user" class="me-2" data-acorn-size="17"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                <!-- Second Slider End -->
+                <h2 class="" dir="rtl"><span class="fw-bold fs-4">خدماتنا</span>(عرض الكل)</h2>
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card h-100 hover-scale-up background_color pe-3 backgound_1">
+                            <div class="card-body pb-0 ps-0">
+                                <div class="d-flex flex-column">
+                                    <div class="display-4"> خدمات تجهيز الأفراح </div>
+                                </div>
+
+                                <p class="line_height fw-light">المحامي الاقرب لك للحصول على استشارة المستشار القانوني المختص في الاحوال الشخصية في حدوث اي خلاف بعقد النجاح او مشاكل زوجية او مشاكل عائلية لمعرفة ما لك وما عليك في قانون دولتك. إخلاء مسؤولية: ( أي معاملة مع مزودي الخدمات
+                                    على مسؤوليتك الخاصة )
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="card h-100 hover-scale-up backgound_2 background_color pe-3">
+                            <div class="card-body pb-0">
+                                <div class="d-flex flex-column">
+                                    <div class="display-4"> خدمة مراكز الفحص الطبي </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column">
+                                        <p class="line_height fw-light">المحامي الاقرب لك للحصول على استشارة المستشار القانوني المختص في الاحوال الشخصية في حدوث اي خلاف بعقد النجاح او مشاكل زوجية او مشاكل عائلية لمعرفة ما لك وما عليك في قانون دولتك. إخلاء مسؤولية: ( أي معاملة مع مزودي
+                                            الخدمات على مسؤوليتك الخاصة )
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+    <!-- </div> -->
     <!-- Search Modal End -->
 
     <!-- Vendor Scripts Start -->
